@@ -1,0 +1,205 @@
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+  scroll-behavior: smooth
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --cor-background: #F7FFF8;
+    --cor-texto-primario: #FD3E81;
+    --cor-texto-secundario: #6F6F6F;
+    --cor-branco-primario: #FFFF;
+
+    --cor-botão--primario: #FFC4D9;
+    --cor-botão--secundario: #eeacc3;
+
+}
+
+body {
+    background-color: var(--cor-background);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    display: none;
+}
+
+#section1 h3, h1{
+    color: var(--cor-texto-primario);
+}
+
+#section1 h3{
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: lighter;
+    width: 20rem;
+}
+
+#section1 h1 {
+    margin-top: 0.625rem;
+    font-size: 3rem;
+}
+
+#section1 {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+#section1 .donationButton {
+    border: 2px solid var(--cor-texto-primario);
+    border-radius: .563rem;
+    color: var(--cor-texto-primario);
+    background-color: var(--cor-branco-primario);
+
+    font-size: 1.25rem;
+    font-weight: bold;
+
+    width: 12.5rem;
+    height: 2.5rem;
+    margin-top: 0.625rem;
+    
+    justify-content: center;
+   
+}
+
+#section1 .donationButton:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    background: #fcf1f5;
+    transition: .2s;
+}
+
+#section1 .compassImage{
+    margin-top: 1.875rem;
+    width: 20.625rem;
+    height: 23.188;
+}
+
+.campaigntext {
+    margin-top: 2rem;
+    text-align: center;
+    width: 24.2rem;
+    font-size: 1.5rem;
+    color: var(--cor-texto-secundario);
+}
+
+.campaigntext span {
+    color: var(--cor-texto-primario);
+}
+
+.sectionsButtonsSelectors {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.sectionsButtonsSelectors button{
+    width: 20.625rem;
+    height: 3.875rem;
+
+    background: var(--cor-botão--primario);
+    border: none;
+    border-radius: 0.625rem;
+
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--cor-branco-primario);
+}
+.sectionsButtonsSelectors button:hover, .donationButtons .donationButton:hover {
+    opacity: 0.9;
+    background-color: var(--cor-botão--secundario);
+    cursor: pointer;
+    transition: .2s;
+}
+
+#section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 2rem;
+}
+
+#section2 h2 {
+    font-size: 3rem;
+    color: var(--cor-texto-primario);
+}
+
+#section2 .heartIcon img {
+    margin-top: .5rem;
+}
+
+#section2 p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: var(--cor-texto-secundario);
+}
+
+.donationButtons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2.188rem;
+}
+
+.donationButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+
+    width: 8.875rem;
+    height: 8.125rem;
+
+    border-radius: .625rem;
+    border: none;
+
+    background-color: var(--cor-botão--primario);
+}
+
+#section2 .donationButton p {
+    font-size: 2.5rem;
+    color: var(--cor-branco-primario);
+    font-weight: 600;
+}
+
+#sectionAbout , #sectionPurpose , #sectionHelp {
+    padding: 5rem;
+    margin-top: 3rem;
+} 
+    
+#sectionAbout h3, #sectionPurpose h3, #sectionHelp h3 {
+    color: var(--cor-texto-primario);
+    text-align: center;
+    font-size: 2.125rem;
+}
+
+#sectionAbout p, #sectionPurpose p, #sectionHelp p {
+    text-align: center;
+    color: var(--cor-texto-secundario);
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    
+} 
+
+#sectionHelp .help {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
