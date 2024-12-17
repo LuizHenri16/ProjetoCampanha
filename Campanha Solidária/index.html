@@ -21,7 +21,7 @@
                 <li><a class="duvidasLink" href="">Dúvidas</a></li>
             </ul>
         </nav>
-    </header>
+    </header> 
 
     <main>
         <section id="section1">
@@ -42,15 +42,33 @@
                     importante!</h4>
             </div>
             <div class="sectionsButtonsSelectors">
-                <button class ="buttonAbout">Quem somos?</button>
-                <button class="buttonPurpose">Qual objetivo?</button>
-                <button class="buttonHelp">Como ajudar?</button>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Quem somos?</button>
+                    <div class="dropdown-content">
+                        <p>Somos um grupo de amigos que acredita que, quando há solidariedade, o amor ao próximo é ativo. Somos voluntários e fazemos campanhas durante o ano para a arrecadação de doações desde 2020. Dedicamos tempo, cuidado e carinho organizando os projetos em abril (Páscoa Solidária) e em outubro (Dia das Crianças), mas são vocês, doadores, que permitem que os projetos aconteçam de fato!</p>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Qual objetivo?</button>
+                    <div class="dropdown-content">
+                        <p>Temos um único objetivo: levar alegria para o dia de algumas crianças. E garantimos que sua doação vai ajudar diretamente nisso. Com todo o valor arrecadado, compramos ovos de Páscoa, chocolates, brinquedos, tudo que a criançada espera nessas datas festivas. A alegria no olhar dos pequeninos ao receber nossas visitas com todos os presentes é inesquecível. Nada é mais perfeito e cheio de esperança do que o sorriso de uma criança feliz!</p>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Como ajudar?</button>
+                    <div class="dropdown-content"> 
+                        <p>Você pode ajudar de várias maneiras, com doações financeiras para a realização de nossos projetos, interagindo conosco divulgando nossas campanhas ou fazendo doações de brinquedos. A ajuda financeira é por aqui mesmo, é só escolher um valor, garantimos a segurança dos links pelo pix. Para divulgar nossas campanhas, basta entrar em contato conosco, para as doações de brinquedos também, é só nos mandar uma mensagem pelo WhatsApp. A sua participação nos ajuda a aumentar a nossa base de doadores e, assim, mais crianças poderão ser beneficiadas.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="section2">
             <h2>Faça sua doação</h2>
-            <div class="heartIcon"><img src="assets/icons/Vector.svg" alt="icone Coração na cor Rosa"></div>
+            <div class="heartIcon"><img src="assets/icons/HeartIcon.svg" alt="icone Coração na cor Rosa"></div>
             <p>Escolha um valor:</p>
 
             <div class="donationButtons">
@@ -67,33 +85,25 @@
                     <p>R$ 40,00</p>
                 </button>
             </div>
-        </section>
 
-        <section id="sectionAbout">
-            <div class="sobre">
-                <h3>Quem somos?</h3>
-                <p>Somos um grupo de amigos que acredita que, quando há solidariedade, o amor ao próximo é ativo. Somos voluntários e fazemos campanhas durante o ano para a arrecadação de doações desde 2020. Dedicamos tempo, cuidado e carinho organizando os projetos em abril (Páscoa Solidária) e em outubro (Dia das Crianças), mas são vocês, doadores, que permitem que os projetos aconteçam de fato!</p>
+            <div id="pixFlutuante">
+
 
             </div>
         </section>
 
-        <section id="sectionPurpose">
-            <div class="purpose">
-                <h3>Qual objetivo?</h3>
-                <p>Temos um único objetivo: levar alegria para o dia de algumas crianças. E garantimos que sua doação vai ajudar diretamente nisso. Com todo o valor arrecadado, compramos ovos de Páscoa, chocolates, brinquedos, tudo que a criançada espera nessas datas festivas. A alegria no olhar dos pequeninos ao receber nossas visitas com todos os presentes é inesquecível. Nada é mais perfeito e cheio de esperança do que o sorriso de uma criança feliz!</p>
+        <section id="section3">
+            <div class="textData">
+                <p>A campanha da Páscoa solidária ficará aberta até o dia 19/04/2025. Depois dessa data, você receberá uma mensagem com fotos e mais informações sobre as crianças beneficiadas. Atuamos na Casa de Passagem da nossa cidade, local onde as crianças estão. Garantimos a transparência de nossas ações.</p>
+                <img class="bunnyImage" src="assets/image/coelhoMensagem.png" alt="Imagem coelho segurando placa escrito 'A sua participação é muito importante!'">
             </div>
-        </section>
 
-        <section id="sectionHelp">
-            <div class="help">
-                <h3>Como ajudar?</h3>
-                <p>Você pode ajudar de várias maneiras, com doações financeiras para a realização de nossos projetos, interagindo conosco divulgando nossas campanhas ou fazendo doações de brinquedos. A ajuda financeira é por aqui mesmo, é só escolher um valor, garantimos a segurança dos links pelo pix. Para divulgar nossas campanhas, basta entrar em contato conosco, para as doações de brinquedos também, é só nos mandar uma mensagem pelo WhatsApp. A sua participação nos ajuda a aumentar a nossa base de doadores e, assim, mais crianças poderão ser beneficiadas.</p>
-                <img class="bunnyImage" src="assets/image/coelhoMensagem.png" alt="imagem coelho segurando uma plaquinha escrito ''A sua participação é muito importante!''">
+            <div class="Duvidas">
+                <h4>Ficou com alguma dúvida?</h4>
+                <button onclick=goToContact()><img src="assets/icons/Whatsapp.svg" alt="botão whatsapp"></button>
             </div>
         </section>
     </main>
-
-    <footer></footer>
     
 </body>
 

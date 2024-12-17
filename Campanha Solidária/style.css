@@ -93,6 +93,7 @@ main {
     width: 24.2rem;
     font-size: 1.5rem;
     color: var(--cor-texto-secundario);
+    font-weight: 500;
 }
 
 .campaigntext span {
@@ -103,21 +104,55 @@ main {
     margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 1.50rem;
 }
 
-.sectionsButtonsSelectors button{
-    width: 20.625rem;
-    height: 3.875rem;
-
-    background: var(--cor-botão--primario);
-    border: none;
-    border-radius: 0.625rem;
-
+.dropbtn {
+    background-color: var(--cor-botão--primario);
+    color: white;
+    padding: 1rem 4rem;
     font-size: 2rem;
-    font-weight: bold;
-    color: var(--cor-branco-primario);
-}
+    font-weight: 800;
+
+    border-radius: .625rem;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    
+    background-color: var(--cor-background);
+    max-height: 300px;
+    min-width: 180px;
+
+    padding: .5rem;
+    text-align: center;
+    border-radius: .5rem;
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content p {
+    color: var(--cor-texto-secundario);
+    font-weight: 600;
+
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown.ativo .dropdown-content {
+    display: block;
+  }
+  
+
 .sectionsButtonsSelectors button:hover, .donationButtons .donationButton:hover {
     opacity: 0.9;
     background-color: var(--cor-botão--secundario);
@@ -196,10 +231,50 @@ main {
     
 } 
 
-#sectionHelp .help {
+#section3  {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+}
+
+#section3 .textData{
+    margin-top: 2rem;
+
+    width: 25rem;
+    font-size: 1.5rem;
+    color: var(--cor-texto-secundario);
+    text-align: center;
+}
+
+#section3 .Duvidas {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--cor-texto-primario);
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+#section3 .Duvidas button {
+    border: none;
+    background: none;
+
+}
+
+#section3 .Duvidas img {
+    margin: 2rem 0 2rem 0;
+    width: 6rem;
+}
+
+#section3 .Duvidas img:hover {
+    opacity: .9;
+    cursor: pointer;
+}
+
+#section3 .Duvidas img:active {
+    opacity: .8;
+    cursor: pointer;
 }
 
