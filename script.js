@@ -14,7 +14,7 @@ dropContentText.forEach((dropContentText, index) => {
     })
 })
 
-const whatsAppLink = "https://wa.me/38991388472";
+const whatsAppLink = "https://wa.me/71984771099";
 function goToContact() {
     window.open(whatsAppLink)
 }
