@@ -278,3 +278,25 @@ main {
     cursor: pointer;
 }
 
+
+.corpoBussola {
+    background: url("assets/icons/corpoBussola.svg");
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.centroBussola {
+    position: relative;
+    left: -20px;
+    top: -15px;
+    animation: rotate-center 7s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite alternate-reverse both;
+}
+
+@keyframes rotate-center {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
