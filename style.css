@@ -54,6 +54,7 @@ main {
     margin-top: 2.5rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;   
 }
 
@@ -280,16 +281,19 @@ main {
 
 
 .corpoBussola {
+    width: 20.625rem;
+    min-height: 23.25rem;
+
     background: url("assets/icons/corpoBussola.svg");
     background-repeat: no-repeat;
-    height: auto;
+    margin-top: 3rem;
 }
 
 .centroBussola {
     position: relative;
-    left: -20px;
-    top: -15px;
-    animation: rotate-center 7s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite alternate-reverse both;
+    left: 105px;
+    top: 110px;
+    animation: rotate-center  7s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite alternate-reverse both;
 }
 
 @keyframes rotate-center {
