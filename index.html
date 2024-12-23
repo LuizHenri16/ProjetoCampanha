@@ -74,24 +74,56 @@
             <p>Escolha um valor:</p>
 
             <div class="donationButtons">
-                <button class="donationButton">
+                <button class="donationButton" onclick="showOverlay('overlay1')">
                     <p>R$ 10,00</p>
                 </button>
-                <button class="donationButton">
+                <button class="donationButton" onclick="showOverlay('overlay2')"> 
                     <p>R$ 20,00</p>
                 </button>
-                <button class="donationButton">
+                <button class="donationButton" onclick="showOverlay('overlay3')">
                     <p>R$ 30,00</p>
                 </button>
-                <button class="donationButton">
+                <button class="donationButton" onclick="showOverlay('overlay4')">
                     <p>R$ 40,00</p>
                 </button>
             </div>
 
-            <div id="pixFlutuante">
-
-
+            <div id="overlay1" class="overlay" onmouseleave="closeOverlay('overlay1')">
+                <div class="overlayContent">
+                    <button class="closeButton" onclick="closeOverlay('overlay1')">X</button>
+                    <img class="qrCode" src="assets/image/qrcodeExemplo.png" alt="QR Code">
+                    <button class="copiarButton" onclick="copiarCodigo('pixCode1')">copiar código</button>
+                    <p id="pixCode1" class="hidden">10</p>
+                </div>
             </div>
+
+            <div id="overlay2" class="overlay" onmouseleave="closeOverlay('overlay2')">
+                <div class="overlayContent">
+                    <button class="closeButton" onclick="closeOverlay('overlay2')">X</button>
+                    <img class="qrCode" src="assets/image/qrcodeExemplo.png" alt="QR Code">
+                    <button class="copiarButton" onclick="copiarCodigo('pixCode2')">copiar código</button>
+                    <p id="pixCode2" class="hidden">20</p>
+                </div>
+            </div>
+
+            <div id="overlay3" class="overlay" onmouseleave="closeOverlay('overlay3')">
+                <div class="overlayContent">
+                    <button class="closeButton" onclick="closeOverlay('overlay3')">X</button>
+                    <img class="qrCode" src="assets/image/qrcodeExemplo.png" alt="QR Code">
+                    <button class="copiarButton" onclick="copiarCodigo('pixCode3')">copiar código</button>
+                    <p id="pixCode3" class="hidden">30</p>
+                </div>
+            </div>
+
+            <div id="overlay4" class="overlay" onmouseleave="closeOverlay('overlay4')">
+                <div class="overlayContent">
+                    <button class="closeButton" onclick="closeOverlay('overlay4')">X</button>
+                    <img class="qrCode" src="assets/image/qrcodeExemplo.png" alt="QR Code">
+                    <button class="copiarButton" onclick="copiarCodigo('pixCode4')">copiar código</button>
+                    <p id="pixCode4" class="hidden">40</p>
+                </div>
+            </div>
+
         </section>
 
         <section id="section3">
@@ -102,7 +134,7 @@
 
             <div class="Duvidas">
                 <h4>Ficou com alguma dúvida?</h4>
-                <button onclick=goToContact()><img src="assets/icons/Whatsapp.svg" alt="botão whatsapp"></button>
+                <button class="whastappIcon" onclick=goToContact()><img src="assets/icons/Whatsapp.svg" alt="botão whatsapp"></button>
             </div>
         </section>
 

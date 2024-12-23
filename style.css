@@ -7,8 +7,7 @@
   scroll-behavior: smooth
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sigmar&display=swap');
 :root {
     --cor-background: #F7FFF8;
     --cor-texto-primario: #FD3E81;
@@ -17,6 +16,7 @@
 
     --cor-botão--primario: #FFC4D9;
     --cor-botão--secundario: #eeacc3;
+    --cor-gradiente--primario: linear-gradient(90deg, rgba(255,196,217,1) 0%, rgba(253,62,129,1) 45%);
 
 }
 
@@ -72,7 +72,6 @@ main {
     margin-top: 0.625rem;
     
     justify-content: center;
-   
 }
 
 #section1 .donationButton:hover {
@@ -159,6 +158,9 @@ main {
     background-color: var(--cor-botão--secundario);
     cursor: pointer;
     transition: .2s;
+    
+    animation: pulsate-fwd 1s infinite;
+    
 }
 
 #section2 {
@@ -205,6 +207,10 @@ main {
     border: none;
 
     background-color: var(--cor-botão--primario);
+}
+
+.donationButton:hover {
+    animation: pulsate-fwd 1s infinite;
 }
 
 #section2 .donationButton p {
@@ -293,8 +299,95 @@ main {
     position: relative;
     left: 105px;
     top: 110px;
-    animation: rotate-center  7s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite alternate-reverse both;
+    animation: rotate-center 12s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite alternate-reverse both;
 }
+
+.whastappIcon {
+}
+
+.whastappIcon:hover {
+    animation: pulsate-fwd 1s infinite;
+}
+
+
+
+/* ---  Overlay Pix --- */
+
+.overlay {
+    display: none;
+
+    width: 23rem;
+    height: 22rem;
+    
+    border-radius: .625rem;
+    padding: 6px;
+    background: var(--cor-gradiente--primario);
+    opacity: .95;
+
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 30%;
+}
+
+.overlayContent { 
+    width: 100%;
+    height: 100%;
+    border-radius: .625rem;
+    background-color: var(--cor-background);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.overlayContent .closeButton {
+    align-self: flex-end;
+    border: none;
+    background: none;
+    
+    font-size: 2rem;
+    font-family: "Sigmar";
+    font-weight: 800;
+    color: var(--cor-texto-primario);
+    
+    margin: .5rem;
+}
+
+.overlayContent .closeButton:hover {
+    opacity: .8;
+    cursor: pointer;
+    
+}
+
+.overlayContent .copiarButton {
+    border: none;
+    background: var(--cor-branco-primario);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 17.5rem;
+    height: 3.75rem;
+    align-self: center;
+
+    margin-top: 1.8rem;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--cor-texto-primario);
+}
+
+.overlayContent .copiarButton:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.overlayContent .qrCode {
+    align-self: center;
+    width: 11rem;
+}
+
+.hidden {
+    display: none;
+}
+
 
 @keyframes rotate-center {
     0% {
@@ -302,5 +395,17 @@ main {
     }
     100% {
       transform: rotate(360deg);
+    }
+}
+
+@keyframes pulsate-fwd {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
     }
   }
