@@ -10,6 +10,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sigmar&display=swap');
 :root {
     --cor-background: #F7FFF8;
+    --cor-background2: #eefdf0;
+    --cor-background3: #eefdf8;
+    --cor-background4: #e6fcfc;;
+    --cor-background5: #f8e7fd;;
+
+
     --cor-texto-primario: #FD3E81;
     --cor-texto-secundario: #6F6F6F;
     --cor-branco-primario: #FFFF;
@@ -21,7 +27,7 @@
 }
 
 body {
-    background-color: var(--cor-background);
+    animation: color-change-5x 8s linear infinite alternate both;
 }
 
 main {
@@ -407,5 +413,23 @@ main {
     }
     100% {
       transform: scale(1);
+    }
+}
+
+@keyframes color-change-5x {
+    0% {
+      background: var(--cor-background);
+    }
+    25% {
+      background: var(--cor-background2);
+    }
+    50% {
+      background: var(--cor-background3);
+    }
+    75% {
+      background: var(--cor-background4);
+    }
+    100% {
+      background: var(--cor-background5);
     }
   }
