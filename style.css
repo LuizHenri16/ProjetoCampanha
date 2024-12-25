@@ -15,7 +15,6 @@
     --cor-background4: #e6fcfc;;
     --cor-background5: #f8e7fd;;
 
-
     --cor-texto-primario: #FD3E81;
     --cor-texto-secundario: #6F6F6F;
     --cor-branco-primario: #FFFF;
@@ -24,16 +23,14 @@
     --cor-botão--secundario: #eeacc3;
     --cor-gradiente--primario: linear-gradient(90deg, rgba(255,196,217,1) 0%, rgba(253,62,129,1) 45%);
 
+    --fontSize-h1: 3rem;
+    --fontSize-h2: 2.75rem;;
+    --fontSize-h3: 1.25rem;
+    --fontSize-h4: 1.5rem;
 }
 
 body {
     animation: color-change-5x 8s linear infinite alternate both;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .header {
@@ -46,22 +43,22 @@ main {
 
 #section1 h3{
     text-align: center;
-    font-size: 1.25rem;
+    font-size: var(--fontSize-h3) ;
     font-weight: lighter;
+
     width: 20rem;
 }
 
 #section1 h1 {
     margin-top: 0.625rem;
-    font-size: 3rem;
+    width: 24rem;
+    font-size: var(--fontSize-h1);
 }
 
 #section1 {
-    margin-top: 2.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;   
+    align-items: center; 
 }
 
 #section1 .donationButton {
@@ -90,14 +87,18 @@ main {
 #section1 .compassImage{
     margin-top: 1.875rem;
     width: 20.625rem;
-    height: 23.188;
+    height: 23.188rem;
 }
 
 .campaigntext {
     margin-top: 2rem;
+    padding: 1rem;
     text-align: center;
     width: 24.2rem;
-    font-size: 1.5rem;
+}
+
+.campaigntext h4{
+    font-size: var(--fontSize-h4);
     color: var(--cor-texto-secundario);
     font-weight: 500;
 }
@@ -106,7 +107,7 @@ main {
     color: var(--cor-texto-primario);
 }
 
-.sectionsButtonsSelectors {
+.infoButtonsSelectors {
     margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -116,7 +117,8 @@ main {
 .dropbtn {
     background-color: var(--cor-botão--primario);
     color: white;
-    padding: 1rem 4rem;
+    width: 20rem;
+    height: 4rem;
     font-size: 2rem;
     font-weight: 800;
 
@@ -159,13 +161,13 @@ main {
   }
   
 
-.sectionsButtonsSelectors button:hover, .donationButtons .donationButton:hover {
+.infoButtonsSelectors button:hover, .donationButtons .donationButton:hover {
     opacity: 0.9;
     background-color: var(--cor-botão--secundario);
     cursor: pointer;
     transition: .2s;
     
-    animation: pulsate-fwd 1s infinite;
+    animation: pulsar-anima 1s infinite;
     
 }
 
@@ -178,7 +180,7 @@ main {
 }
 
 #section2 h2 {
-    font-size: 3rem;
+    font-size: var(--fontSize-h2);
     color: var(--cor-texto-primario);
 }
 
@@ -216,7 +218,7 @@ main {
 }
 
 .donationButton:hover {
-    animation: pulsate-fwd 1s infinite;
+    animation: pulsar-anima 1s infinite;
 }
 
 #section2 .donationButton p {
@@ -225,38 +227,26 @@ main {
     font-weight: 600;
 }
 
-#sectionAbout , #sectionPurpose , #sectionHelp {
-    padding: 5rem;
-    margin-top: 3rem;
-} 
-    
-#sectionAbout h3, #sectionPurpose h3, #sectionHelp h3 {
-    color: var(--cor-texto-primario);
-    text-align: center;
-    font-size: 2.125rem;
-}
-
-#sectionAbout p, #sectionPurpose p, #sectionHelp p {
-    text-align: center;
-    color: var(--cor-texto-secundario);
-    font-size: 1.25rem;
-    margin-top: 1rem;
-    
-} 
-
 #section3  {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#section3 .textData{
+#section3 .textData {
     margin-top: 2rem;
-
     width: 25rem;
-    font-size: 1.5rem;
+    padding: 1rem;
+
+    font-size: var(--fontSize-h3);
     color: var(--cor-texto-secundario);
+
+    align-items: center;
     text-align: center;
+}
+
+#section3 .textData .bunnyImage {
+    width: 22rem;
 }
 
 #section3 .Duvidas {
@@ -305,7 +295,7 @@ main {
     position: relative;
     left: 105px;
     top: 110px;
-    animation: rotate-center 12s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite alternate-reverse both;
+    animation:rotacao-anima 12s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite alternate-reverse both;
 }
 
 .whastappIcon {
@@ -314,8 +304,6 @@ main {
 .whastappIcon:hover {
     animation: pulsate-fwd 1s infinite;
 }
-
-
 
 /* ---  Overlay Pix --- */
 
@@ -395,7 +383,10 @@ main {
 }
 
 
-@keyframes rotate-center {
+
+/* Animações Usadas */
+
+@keyframes rotacao-anima{
     0% {
       transform: rotate(0);
     }
@@ -404,7 +395,7 @@ main {
     }
 }
 
-@keyframes pulsate-fwd {
+@keyframes pulsar-anima {
     0% {
       transform: scale(1);
     }
@@ -432,4 +423,33 @@ main {
     100% {
       background: var(--cor-background5);
     }
-  }
+}
+
+/* ---- ---- ---- */
+
+
+/* Para telas menos que 430px, ou seja, telas pequenas como smartphones com tela menor */
+@media (max-width: 429px) {
+    :root {
+        --fontSize-h1: 2.5rem;
+        --fontSize-h2: 2.2rem;;
+        --fontSize-h3: 1rem;
+        --fontSize-h4: .9rem;
+    }
+
+}
+
+/* Para telas menores que 767px, ou seja, tables e dispositivos móveis maiores */
+@media (max-width: 767px) {
+
+}
+
+/* Para telas menores que 1024px, ou seja, tablets maiores e laptops  */
+@media (max-width: 1023px) {
+
+}
+
+/* Para telas menores que 1280px, ou seja, desktop e laptops grandes */
+@media (max-width: 1279px) {
+
+}
