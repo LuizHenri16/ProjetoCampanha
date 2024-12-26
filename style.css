@@ -138,7 +138,7 @@ body {
     position: absolute;
     
     background-color: var(--cor-background);
-    max-height: 300px;
+    max-height: 350px;
     min-width: 180px;
 
     padding: .5rem;

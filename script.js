@@ -1,16 +1,19 @@
-const dropdown = document.querySelectorAll(" .sectionsButtonsSelectors .dropdown")
-const dropbtn = document.querySelectorAll(" .sectionsButtonsSelectors .dropbtn")
-const dropContentText = document.querySelectorAll(" .sectionsButtonsSelectors .dropdown-content")
+const dropdowns = document.querySelectorAll(".dropdown")
+const dropContentText = document.querySelectorAll(".dropdown-content")
 
-dropbtn.forEach((dropbtn, index) => {
-    dropbtn.addEventListener('click', () => {
-        dropdown[index].classList.toggle("ativo")
+function toggleDropdown(index) {
+    dropdowns.forEach((dropdown, i) => {
+        if (i !== index) {
+            dropdown.classList.remove("ativo")
+        }
+        dropdowns[index].classList.toggle("ativo")
     })
-})
+}
+
 
 dropContentText.forEach((dropContentText, index) => {
     dropContentText.addEventListener("mouseleave", () => {
-        dropdown[index].classList.remove("ativo")
+        dropdowns[index].classList.remove("ativo")
     })
 })
 
@@ -24,7 +27,7 @@ function showOverlay(id) {
 }
 
 // Fechar o overlay com o código para o Pix
-function closeOverlay(id){
+function closeOverlay(id) {
     document.getElementById(id).style.display = "none";
 }
 
@@ -34,7 +37,7 @@ function copiarCodigo(id) {
 
     navigator.clipboard.writeText(code).then(() => {
         alert("Código copiado: " + code)
-    } )
+    })
 }
 
 
