@@ -25,8 +25,8 @@
 
     --fontSize-h1: 3rem;
     --fontSize-h2: 2.75rem;;
-    --fontSize-h3: 1.25rem;
-    --fontSize-h4: 1.5rem;
+    --fontSize-h3: 1.5rem;
+    --fontSize-h4: 1.4rem;
 }
 
 body {
@@ -51,14 +51,15 @@ body {
 
 #section1 h1 {
     margin-top: 0.625rem;
-    width: 24rem;
+    white-space: nowrap;
     font-size: var(--fontSize-h1);
 }
 
 #section1 {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
+    margin-top: 2rem; 
 }
 
 #section1 .donationButton {
@@ -238,11 +239,14 @@ body {
     width: 25rem;
     padding: 1rem;
 
-    font-size: var(--fontSize-h3);
-    color: var(--cor-texto-secundario);
-
     align-items: center;
     text-align: center;
+}
+
+#section3 .textData h4 {
+    font-size: var(--fontSize-h4);
+    color: var(--cor-texto-secundario);
+    font-weight: 500;
 }
 
 #section3 .textData .bunnyImage {
@@ -433,8 +437,8 @@ body {
     :root {
         --fontSize-h1: 2.5rem;
         --fontSize-h2: 2.2rem;;
-        --fontSize-h3: 1rem;
-        --fontSize-h4: .9rem;
+        --fontSize-h3: 1.3rem;
+        --fontSize-h4: 1.1rem;
     }
 
 }
