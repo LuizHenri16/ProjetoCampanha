@@ -314,7 +314,7 @@ body {
 }
 
 .whastappIcon:hover {
-    animation: pulsate-fwd 1s infinite;
+    animation: pulsar-anima 1s infinite;
 }
 
 /* ---  Overlay Pix --- */
