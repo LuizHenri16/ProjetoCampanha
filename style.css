@@ -1,5 +1,6 @@
 * {
   list-style: none;
+  text-decoration: none;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -60,6 +61,13 @@ body {
     flex-direction: column;
     align-items: center;
     margin-top: 2rem; 
+}
+
+#section1 .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #section1 .donationButton {
@@ -448,12 +456,63 @@ body {
 
 }
 
-/* Para telas menores que 1024px, ou seja, tablets maiores e laptops  */
-@media (max-width: 1023px) {
-
-}
-
 /* Para telas menores que 1280px, ou seja, desktop e laptops grandes */
-@media (max-width: 1279px) {
+@media (min-width: 1023px) {
 
+    :root {
+        --fontSize-h1: 5.5rem;
+    }
+
+    .header {
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header .sections ul {
+        display: flex;
+        gap: 3.75rem;
+    }
+
+    .header .sections ul li a {
+        color: #6F6F6F;
+        font-size: 1rem;
+    }
+
+    .header .sections ul li a:hover {
+        color: var(--cor-botão--primario);
+    }
+
+    #section1 .content1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6rem;
+    }
+
+    #section1 .content1 .content2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #section1 .donationButton {
+        margin-top: 2rem;
+        font-size: 1.4rem;
+        background-color: var(--cor-texto-primario);
+        color: var(--cor-branco-primario);
+    }
+
+    #section1 .donationButton:hover {
+        background-color: var(--cor-texto-primario);
+        opacity: .9;
+    }
+
+    .campaigntext {
+        width: 50rem;
+    }
+
+    #section3 .textData {
+        width: 50rem;
+    }
 }
