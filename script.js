@@ -102,11 +102,13 @@ function goToContact() {
 // Abrir o overlay com o código pix e qrcode
 function showOverlay(id) {
     document.getElementById(id).style.display = "flex";
+    document.body.style.overflow = "hidden"
 }
 
 // Fechar o overlay com o código para o Pix
 function closeOverlay(id) {
     document.getElementById(id).style.display = "none";
+    document.body.style.overflow = "auto"
 }
 
 // Copiar qrcode ao clicar no botão de copiar código

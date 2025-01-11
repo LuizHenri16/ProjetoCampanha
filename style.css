@@ -10,14 +10,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sigmar&display=swap');
 :root {
-    --cor-background: #F7FFF8;
-    --cor-background2: #eefdf0;
-    --cor-background3: #eefdf8;
-    --cor-background4: #e6fcfc;;
-    --cor-background5: #f8e7fd;;
+    --cor-background: #f7e9fc;;
 
     --cor-texto-primario: #FD3E81;
     --cor-texto-secundario: #6F6F6F;
+    --cor-texto-3: #585858;
     --cor-branco-primario: #FFFF;
 
     --cor-botão--primario: #FFC4D9;
@@ -31,7 +28,7 @@
 }
 
 body {
-    animation: color-change-5x 8s linear infinite alternate both;
+    background-color: var(--cor-background) ;
 }
 
 .header {
@@ -197,13 +194,6 @@ body {
     margin-top: .5rem;
 }
 
-#section2 p {
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    font-weight: lighter;
-    color: var(--cor-texto-secundario);
-}
-
 .donationButtons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -320,31 +310,32 @@ body {
 /* ---  Overlay Pix --- */
 
 .overlay {
+
     display: none;
-
-    width: 23rem;
-    height: 22rem;
-    
-    border-radius: .625rem;
-    padding: 6px;
-    background: var(--cor-gradiente--primario);
-    opacity: .95;
-
+    width: 100%;
+    height: 100vh;
     position: fixed;
-    justify-content: center;
-    align-items: center;
-    top: 30%;
+    top: 0;
+    
+    background: var(--cor-gradiente--primario);
 }
 
 .overlayContent { 
     width: 100%;
-    height: 100%;
-    border-radius: .625rem;
-    background-color: var(--cor-background);
+    height: 100vh;
+    background-color: var(--cor-branco-primario);
 
     display: flex;
     flex-direction: column;
 }
+
+.overlayContent .box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 .overlayContent .closeButton {
     align-self: flex-end;
@@ -362,32 +353,75 @@ body {
 .overlayContent .closeButton:hover {
     opacity: .8;
     cursor: pointer;
+}
+
+.overlayContent .copiarButton, .overlayContent .box button  {
+    border: none;
+    border-radius: .475rem;
+    padding: 1rem;
+    background: var(--cor-branco-primario);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    max-width: 20.5rem;
+    height: 3.75rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.875rem;
+
+    color: var(--cor-texto-primario);
+}
+
+.overlayContent .box .copytextmessage {
+    margin-top: 0.625rem;
+    font-size: .875rem;
+    color: var(--cor-texto-secundario);
+}
+
+.overlayContent .box .prooftext {
+    width: 26rem;
+    color: var(--cor-texto-secundario);
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.overlayContent .box .prooftext span {
     
+    color: var(--cor-texto-3);
+    font-weight: 600;
 }
 
 .overlayContent .copiarButton {
-    border: none;
-    background: var(--cor-branco-primario);
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    width: 17.5rem;
-    height: 3.75rem;
-    align-self: center;
+    font-size: 1.9rem;
+    font-weight: 600;
+}
 
-    margin-top: 1.8rem;
+.overlayContent .box button {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
 
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--cor-texto-primario);
+.overlayContent .box button img {
+    width: 2.8rem;
+    
 }
 
 .overlayContent .copiarButton:hover {
     opacity: .8;
     cursor: pointer;
 }
+.overlayContent .box .value {
+    color: var(--cor-texto-primario);
+}
 
-.overlayContent .qrCode {
+.overlayContent .box .qrCodebox {
+    margin-top: .625rem;
     align-self: center;
-    width: 11rem;
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 5px 0px rgba(145,145,145,1);
 }
 
 .hidden {
@@ -416,24 +450,6 @@ body {
     }
     100% {
       transform: scale(1);
-    }
-}
-
-@keyframes color-change-5x {
-    0% {
-      background: var(--cor-background);
-    }
-    25% {
-      background: var(--cor-background2);
-    }
-    50% {
-      background: var(--cor-background3);
-    }
-    75% {
-      background: var(--cor-background4);
-    }
-    100% {
-      background: var(--cor-background5);
     }
 }
 
