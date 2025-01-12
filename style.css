@@ -142,7 +142,7 @@ body {
     display: none;
     position: absolute;
     
-    background-color: var(--cor-background);
+    background-color: var(--cor-branco-primario);
     max-height: 350px;
     min-width: 180px;
 
@@ -205,7 +205,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0;
+    justify-content: center;
 
     width: 8.875rem;
     height: 8.125rem;
@@ -247,6 +247,10 @@ body {
     font-weight: 500;
 }
 
+#section3 .textData h4 span {
+    color: var(--cor-texto-primario);
+}
+
 #section3 .textData .bunnyImage {
     width: 22rem;
 }
@@ -283,6 +287,7 @@ body {
     cursor: pointer;
 }
 
+/* ---  Bússola  --- */
 
 .corpoBussola {
     width: 20.625rem;
@@ -300,8 +305,7 @@ body {
     animation:rotacao-anima 12s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite alternate-reverse both;
 }
 
-.whastappIcon {
-}
+/* ---  Whatsapp-icon --- */
 
 .whastappIcon:hover {
     animation: pulsar-anima 1s infinite;
@@ -310,7 +314,6 @@ body {
 /* ---  Overlay Pix --- */
 
 .overlay {
-
     display: none;
     width: 100%;
     height: 100vh;
@@ -339,15 +342,8 @@ body {
 
 .overlayContent .closeButton {
     align-self: flex-end;
-    border: none;
     background: none;
-    
-    font-size: 2rem;
-    font-family: "Sigmar";
-    font-weight: 800;
-    color: var(--cor-texto-primario);
-    
-    margin: .5rem;
+    border: none;
 }
 
 .overlayContent .closeButton:hover {
@@ -367,7 +363,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+
     margin-top: 1.875rem;
 
     color: var(--cor-texto-primario);
@@ -419,7 +415,7 @@ body {
 .overlayContent .box .qrCodebox {
     margin-top: .625rem;
     align-self: center;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: .5rem;
     box-shadow: 0px 0px 5px 0px rgba(145,145,145,1);
 }
