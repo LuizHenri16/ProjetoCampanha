@@ -365,6 +365,7 @@ body {
     align-items: center;
 
     margin-top: 1.875rem;
+    gap: .5rem;
 
     color: var(--cor-texto-primario);
 }
@@ -379,7 +380,7 @@ body {
     width: 26rem;
     color: var(--cor-texto-secundario);
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-top: 2rem;
 }
 
