@@ -68,11 +68,13 @@ body {
 }
 
 #section1 .donationButton {
-    border: 2px solid var(--cor-texto-primario);
+  /*  border: 2px solid var(--cor-texto-primario);
     border-radius: .563rem;
     color: var(--cor-texto-primario);
-    background-color: var(--cor-branco-primario);
+    background-color: var(--cor-branco-primario);        teste */ 
 
+    background-color: var(--cor-texto-primario);
+    color: var(--cor-branco-primario);
     font-size: 1.25rem;
     font-weight: bold;
 
@@ -194,6 +196,11 @@ body {
     margin-top: .5rem;
 }
 
+.valuetext {
+    color: var(--cor-texto-secundario);
+    text-align: center;
+}
+
 .donationButtons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -305,8 +312,19 @@ body {
     animation:rotacao-anima 12s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite alternate-reverse both;
 }
 
+.contactustitle {
+    font-size: 1.6rem;
+}
+.contactustext {
+    font-size: 1rem;
+    color: var(--cor-texto-secundario);
+}
+
 /* ---  Whatsapp-icon --- */
 
+#section3 .whastappIcon img{
+    width: 4rem;
+}
 .whastappIcon:hover {
     animation: pulsar-anima 1s infinite;
 }
@@ -377,7 +395,7 @@ body {
 }
 
 .overlayContent .box .prooftext {
-    width: 26rem;
+    width: 22rem;
     color: var(--cor-texto-secundario);
     text-align: center;
     font-size: 1.3rem;
