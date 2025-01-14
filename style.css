@@ -97,7 +97,7 @@ body {
     margin-top: 2rem;
     padding: 1rem;
     text-align: center;
-    width: 24.2rem;
+    width: 20rem;
 }
 
 .campaigntext h4{
@@ -477,9 +477,9 @@ body {
 /* Para telas menos que 430px, ou seja, telas pequenas como smartphones com tela menor */
 @media (max-width: 429px) {
     :root {
-        --fontSize-h1: 2.4rem;
+        --fontSize-h1: 2.5rem;
         --fontSize-h2: 2.2rem;;
-        --fontSize-h3: 1.2rem;
+        --fontSize-h3: .8rem;
         --fontSize-h4: 1rem;
     }
 
