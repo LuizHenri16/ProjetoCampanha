@@ -25,6 +25,8 @@
     --fontSize-h2: 2.75rem;;
     --fontSize-h3: 1.2rem;
     --fontSize-h4: 1.4rem;
+
+    --borderRadius-size: .625rem; 
 }
 
 body {
@@ -125,7 +127,7 @@ body {
     font-size: 2rem;
     font-weight: 800;
 
-    border-radius: .625rem;
+    border-radius: var(--borderRadius-size);
     border: none;
     cursor: pointer;
   }
@@ -145,7 +147,7 @@ body {
 
     padding: .5rem;
     text-align: center;
-    border-radius: .5rem;
+    border-radius: var(--borderRadius-size);
 
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -196,6 +198,11 @@ body {
     text-align: center;
 }
 
+/* ---------------------------------=--------------- */
+
+
+/* botão de doação */
+
 .donationButtons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -212,7 +219,7 @@ body {
     width: 8.875rem;
     height: 8.125rem;
 
-    border-radius: .625rem;
+    border-radius: var(--borderRadius-size);
     border: none;
 
     background-color: var(--cor-botão--primario);
@@ -228,6 +235,10 @@ body {
     font-weight: 600;
 }
 
+/* ---------------------------------=--------------- */
+
+
+/* Seção 3 */
 #section3  {
     display: flex;
     justify-content: center;
@@ -291,6 +302,12 @@ body {
     cursor: pointer;
 }
 
+#section3 .whastappIcon img{
+    width: 4rem;
+}
+
+/* ---------------------------------=--------------- */
+
 /* ---  Bússola  --- */
 
 .corpoBussola {
@@ -309,6 +326,10 @@ body {
     animation:rotacao-anima 12s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite alternate-reverse both;
 }
 
+/* ---------------------------------=--------------- */
+
+/* contato*/
+
 .contactustitle {
     font-size: 1.6rem;
 }
@@ -319,12 +340,12 @@ body {
 
 /* ---  Whatsapp-icon --- */
 
-#section3 .whastappIcon img{
-    width: 4rem;
-}
+
 .whastappIcon:hover {
     animation: pulsar-anima 1s infinite;
 }
+
+/* ---------------------------------=--------------- */
 
 /* ---  Overlay Pix --- */
 
@@ -374,7 +395,7 @@ body {
 
 .overlayContent .copiarButton, .overlayContent .box button  {
     border: none;
-    border-radius: .475rem;
+    border-radius: var(--borderRadius-size);
     padding: 1rem;
     background: var(--cor-branco-primario);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -438,15 +459,13 @@ body {
     margin-top: .625rem;
     align-self: center;
     padding: 1rem;
-    border-radius: .5rem;
+    border-radius: var(--borderRadius-size);
     box-shadow: 0px 0px 5px 0px rgba(145,145,145,1);
 }
 
 .hidden {
     display: none;
 }
-
-
 
 /* Animações Usadas */
 
@@ -480,7 +499,7 @@ body {
         --fontSize-h1: 2.7rem;
         --fontSize-h2: 2.2rem;;
         --fontSize-h3: .8rem;
-        --fontSize-h4: 1.2rem;
+        --fontSize-h4: 1.3rem;
     }
 
 }
