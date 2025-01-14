@@ -21,9 +21,9 @@
     --cor-botão--secundario: #eeacc3;
     --cor-gradiente--primario: linear-gradient(90deg, rgba(255,196,217,1) 0%, rgba(253,62,129,1) 45%);
 
-    --fontSize-h1: 3rem;
+    --fontSize-h1: 3.2rem;
     --fontSize-h2: 2.75rem;;
-    --fontSize-h3: 1.5rem;
+    --fontSize-h3: 1.2rem;
     --fontSize-h4: 1.4rem;
 }
 
@@ -68,11 +68,6 @@ body {
 }
 
 #section1 .donationButton {
-  /*  border: 2px solid var(--cor-texto-primario);
-    border-radius: .563rem;
-    color: var(--cor-texto-primario);
-    background-color: var(--cor-branco-primario);        teste */ 
-
     background-color: var(--cor-texto-primario);
     color: var(--cor-branco-primario);
     font-size: 1.25rem;
@@ -235,13 +230,14 @@ body {
 
 #section3  {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
 #section3 .textData {
     margin-top: 2rem;
-    width: 25rem;
+    width: 20rem;
     padding: 1rem;
 
     align-items: center;
@@ -260,6 +256,7 @@ body {
 
 #section3 .textData .bunnyImage {
     width: 22rem;
+    align-self: center;
 }
 
 #section3 .Duvidas {
@@ -343,11 +340,17 @@ body {
 
 .overlayContent { 
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
     background-color: var(--cor-branco-primario);
+    z-index: 999;
+
 
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .overlayContent .box{
@@ -474,10 +477,10 @@ body {
 /* Para telas menos que 430px, ou seja, telas pequenas como smartphones com tela menor */
 @media (max-width: 429px) {
     :root {
-        --fontSize-h1: 2.5rem;
+        --fontSize-h1: 2.4rem;
         --fontSize-h2: 2.2rem;;
-        --fontSize-h3: 1.3rem;
-        --fontSize-h4: 1.1rem;
+        --fontSize-h3: 1.2rem;
+        --fontSize-h4: 1rem;
     }
 
 }
