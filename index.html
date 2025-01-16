@@ -7,48 +7,27 @@
     <link rel="shortcut icon" href="assets/icons/HeartIcon.svg">
     <title>Páscoa Solidária</title>
 </head>
-
 <body>
-
-    <div></div>
-
     <header class="header">
-        <nav class="sections">  
-            <ul>
-                <li><a class="sobreLink" href="#infoButtonsSelectors">Sobre</a></li>
-                <li><a class="objetivoLink" href="#infoButtonsSelectors"> Objetivo</a></li>
-                <li><a class="ajudeLink" href="#section2">Ajude</a></li>
-                <li><a class="duvidasLink" href="#section3">Dúvidas</a></li>
-            </ul>
-        </nav>
+        <p class="welcome-text">Seja bem vindo(a) ao nosso espaço de doação!</p>
     </header> 
 
     <main>
         <section id="section1">
 
-            <div class="content">
-                <h3>Seja bem vindo(a) ao nosso
-                    espaço de doação!</h3>
-
-                <h1>Páscoa solidária</h2>
-                
-                <button class="donationButton" onclick="location.href='#section2'">Faça sua doação</button>
-            
-                <div class="corpoBussola">
-                    <img class="centroBussola" src="assets/icons/centroBussola.svg" alt="">
-                </div>
-            
-                <div class="campaigntext">
-                    <h4>Para algumas crianças a
-                        <span>PÁSCOA</span> é bem mais que
-                        apenas chocolate! A atenção
-                        e o carinho nessa data
-                        aquece o coração dos nossos
-                        pequeninos . Por
-                        isso, a sua doação é tão
-                        importante!</h4>
+            <div class="content-main">
+                <div class="title">
+                    <h1>Páscoa Solidária</h1>
+                    <p>C.ABRIL</p>
                 </div>
 
+                <div class="content-message">
+                    <div class="message">
+                        <p class="text">Para algumas crianças a <span>Páscoa</span> é bem mais que apenas chocolate! A atenção e o carinho nessa data aquece o coração dos nossos pequeninos. Por isso, a sua doação é tão importante!</p>
+                        <div class="donation-button"><button onclick="location.href='#section-donation'">Faça sua doação</button></div>
+                    </div>
+                    <div class="gif"><img class="gangorra" src="assets/icons/gangorra.gif" alt="gif gangorra com duas crianças brincando"></div>
+                </div>
             </div>
 
             <div id="infoButtonsSelectors"  class="infoButtonsSelectors">
@@ -76,23 +55,28 @@
             </div>
         </section>
 
-        <section id="section2">
-            <h2>Faça sua doação</h2>
-            <div class="heartIcon"><img src="assets/icons/HeartIcon.svg" alt="icone Coração na cor Rosa"></div>
-            <p class="valuetext">Escolha um valor:</p>
+        <section id="section-donation">
+            
+            <div class="image-text">
+                <p class="campanha-text">A campanha da Páscoa Solidária ficará aberta até o dia <span>19/04/2025</span>. Depois dessa data, você
+                    receberá uma mensagem com fotos e mais informações sobre as crianças beneficiadas. Atuamos 
+                   na Casa de Passagem da nossa cidade, local onde as crianças estão. Garantimos a transparência de nossas ações. </p>
+                <img src="assets/icons/donation-image.svg" alt="">
+                <p class="valuetext">Escolha um valor</p>
+            </div>
 
             <div class="donationButtons">
                 <button class="donationButton" onclick="showOverlay('overlay1')">
-                    <p>R$ 10,00</p>
+                    R$ 10,00
                 </button>
                 <button class="donationButton" onclick="showOverlay('overlay2')"> 
-                    <p>R$ 20,00</p>
+                    R$ 20,00
                 </button>
                 <button class="donationButton" onclick="showOverlay('overlay3')">
-                    <p>R$ 30,00</p>
+                    R$ 30,00
                 </button>
                 <button class="donationButton" onclick="showOverlay('overlay4')">
-                    <p>R$ 40,00</p>
+                  R$ 40,00
                 </button>
             </div>
 
@@ -158,21 +142,40 @@
             </div>
 
         </section>
-
-        <section id="section3">
-            <div class="textData">
-                <h4>A campanha da Páscoa solidária ficará aberta até o dia <span>19/04/2025</span>. Depois dessa data, você receberá uma mensagem com fotos e mais informações sobre as crianças beneficiadas. Atuamos na Casa de Passagem da nossa cidade, local onde as crianças estão. Garantimos a transparência de nossas ações.</h4>
-            </div>
-
-            <img class="bunnyImage" src="assets/image/coelhoMensagem.png" alt="Imagem coelho segurando placa escrito 'A sua participação é muito importante!'">
-
-            <div class="Duvidas">
-                <h4 class="contactustitle">Ficou com alguma dúvida?</h4>
-                <p class="contactustext">clique aqui para falar conosco </p>
-                <button class="whastappIcon" onclick=goToContact()><img src="assets/icons/Whatsapp.svg" alt="botão whatsapp"></button>
-            </div>
-        </section>
     </main>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="conferir-content">
+                <div class="title-conferir">
+                    <h4 class="conferir-h4">CONFERIR</h4>
+                </div>
+                <div class="hyperlinks">
+                    <a href="">Sobre</a>
+                    <a href="">Objetivo</a>
+                    <a href="">Ajuda</a>
+                </div>
+            </div>
+            <div class="duvidas-content">
+                <div class="title-duvidas">
+                    <h4 class="duvidas-h4">DÚVIDAS</h4>
+                </div>
+                <div class="hyperlinks">
+                    <a href="">Contato</a>
+                    <a href="">Prazos e pagamentos</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-content-2">
+            <div class="line"></div>
+            
+            <div class="copyright">
+                <p class="copyright-message">© 2025. Com amor, por Edilene Vieira.</p>
+            </div>
+        </div>
+        
+    </footer>
 </body>
 
 <script src="script.js"></script>
