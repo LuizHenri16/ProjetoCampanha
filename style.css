@@ -34,6 +34,7 @@
 
 body {
     background-color: var(--cor-background) ;
+    overflow-x: hidden;
 }
 
 .header {
@@ -73,7 +74,7 @@ body {
 .forma {
     position: relative;
     height: 6rem;
-    top: -70px;
+    top: -80px;
     left: 85px;
 
     transform: rotate(10deg);
@@ -472,11 +473,66 @@ body {
     }
 }
 
+@media (min-width: 425px) {
+    :root {
+        --fontSize-h1: 2.5rem;
+    }
+
+    #section1 .content-main .title p {
+        font-size: 1rem;
+        margin-left: 12rem;
+    }
+
+    .forma {
+        position: relative;
+        width: 7rem;
+        height: 14rem;
+        top: -150px;
+        left: 105px;
+    
+        z-index: -999;
+    }
+
+    #section1 .content-message { 
+        margin-top: -9rem;
+    }
+
+ }
+
+ @media (min-width: 625px) {
+    :root {
+        --fontSize-h1: 3.5rem;
+    }
+
+    #section1 .content-main .title p {
+        font-size: 1.2rem;
+        margin-left: 16rem;
+    }
+
+    #section1 .content-message { 
+        margin-top: -10rem;
+    }
+
+    .forma {
+        position: relative;
+        width: 9rem;
+        height: 14rem;
+        top: -160px;
+        left: 155px;
+    
+        z-index: -999;
+    }
+
+    #section1 .content-message .gif .gangorra {
+        width: 20rem;
+    }
+
+ }
 
 @media (min-width: 1023px) {
 
     :root {
-        --fontSize-h1: 5.5rem;
+        --fontSize-h1: 5rem;
     }
 
     #section1 .content-message {
@@ -490,10 +546,9 @@ body {
 
     .forma {
         position: relative;
-        width: 20rem;
-        height: 14rem;
-        top: -160px;
-        left: 235px;
+        width: 18rem;
+        top: -170px;
+        left: 210px;
     
         z-index: -999;
     }
