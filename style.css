@@ -26,7 +26,7 @@
     --cor-botão--primario: #f2dbc2;
 
     --fontSize-h1: 3rem;
-    --fontSize-p: 1.2rem;
+    --fontSize-p: 1.1rem;
 
     --borderRadius-size: 50px; 
 }
@@ -69,6 +69,7 @@ body {
 #section1 .content-main .title h1 {font-family: "GlacialFonteBold"; font-size: var(--fontSize-h1)}
 #section1 .content-main .title p {font-size: 1rem; margin-left: 15rem; letter-spacing: 2px;}
 
+
 #section1 .content-message {
     display: flex;
     justify-content: center;
@@ -93,10 +94,18 @@ body {
     letter-spacing: 2px;
 }
 
+#section-donation .image-text .campanha-text {
+    font-size: var(--fontSize-p);
+}
+
+#section-donation .image-text .campanha-text span {
+    font-weight: 800;
+}
+
 
 #section1 .donation-button button{
     width: 15rem;
-    height: 4rem;
+    padding: .6rem;
     
     background: none;
     border: 2px var(--cor-border) solid;
@@ -384,7 +393,7 @@ body {
     padding: 3rem;
     display: flex;
     justify-content: center;
-    gap: 4rem;
+    gap: 8rem;
 }
 
 #footer .footer-content-2 {
@@ -457,13 +466,25 @@ body {
     #section1 .content-main .content-message .gif img{
         width: 25rem;
     }
+
 }
 
 /* Para telas menores que 767px, ou seja, tables e dispositivos móveis maiores */
-@media (max-width: 767px) {
+@media (min-width: 767px) {
     :root {
         --fontSize-h1: 2.7rem;
 
+    }
+
+    #footer .footer-content{
+        gap: 10rem;
+    }
+}
+
+@media (min-width: 900px) {
+
+    #footer .footer-content{
+        gap: 15rem;
     }
 }
 
@@ -487,5 +508,9 @@ body {
 
     #section1 .content-message .gif .gangorra {
         width: 22rem;
+    }
+
+    #footer .footer-content{
+        gap: 40rem;
     }
 }
