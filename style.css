@@ -25,7 +25,7 @@
 
     --cor-botão--primario: #f2dbc2;
 
-    --fontSize-h1: 2rem;
+    --fontSize-h1: 2.3rem;
     --fontSize-p: 1.1rem;
     --headerFontSize: .9rem;
 
@@ -75,14 +75,14 @@ body {
     position: relative;
     height: 6rem;
     top: -80px;
-    left: 85px;
+    left: 100px;
 
     transform: rotate(10deg);
     z-index: -999;
 }
 
 #section1 .content-main .title h1 {white-space: nowrap; font-family: "GlacialFonteBold"; font-size: var(--fontSize-h1)}
-#section1 .content-main .title p {font-size: .9rem; margin-left: 10rem; letter-spacing: 2px;}
+#section1 .content-main .title p {font-size: .9rem; margin-left: 11rem; letter-spacing: 2px;}
 
 #section1 .content-message {
     display: flex;
@@ -138,7 +138,7 @@ body {
 
 
 #section1 .content-message .gif .gangorra {
-    width: 16rem;
+    width: 12rem;
 }
 
 .infoButtonsSelectors {
@@ -237,8 +237,8 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-    padding: 2rem;
-    margin: 2.5rem 0 2.5rem 0;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
 }
 
 .donationButton {
