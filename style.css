@@ -27,7 +27,7 @@
 
     --fontSize-h1: 2rem;
     --fontSize-p: 1.1rem;
-    --headerFontSize: .8rem;
+    --headerFontSize: .9rem;
 
     --borderRadius-size: 50px; 
 }
@@ -47,13 +47,14 @@ body {
 }
 
 .header p.welcome-text {
+    padding: .5rem 0 .5rem 0;
     font-size: var(--headerFontSize);
     color: var(--cor-texto-secundario);
 }
 
 #section1 {
     width: 100%;
-    padding: 2rem;
+    padding: 1rem;
 
     display: flex;
     flex-direction: column;
@@ -65,10 +66,22 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    margin-top: 2rem;
+}
+
+.forma {
+    position: relative;
+    height: 6rem;
+    top: -70px;
+    left: 85px;
+
+    transform: rotate(10deg);
+    z-index: -999;
 }
 
 #section1 .content-main .title h1 {white-space: nowrap; font-family: "GlacialFonteBold"; font-size: var(--fontSize-h1)}
-#section1 .content-main .title p {font-size: 1rem; margin-left: 8rem; letter-spacing: 2px;}
+#section1 .content-main .title p {font-size: .9rem; margin-left: 10rem; letter-spacing: 2px;}
 
 #section1 .content-message {
     display: flex;
@@ -76,7 +89,7 @@ body {
     align-items: center;
     flex-direction: column-reverse;
 
-    margin-top: 2rem;
+    margin-top: -3rem;
     gap: 3rem;
 
 }
@@ -209,7 +222,7 @@ body {
 
 #section-donation .image-text img {
     margin-top: 2rem;
-    width: 19rem;
+    width: 18rem;
 }
 
 .valuetext {
@@ -471,6 +484,18 @@ body {
         align-items: center;
         flex-direction: row;
         gap: 10rem;
+    }
+
+    #section1 .content-main .title p {font-size: 1.5rem; margin-left: 30rem; letter-spacing: 2px;}
+
+    .forma {
+        position: relative;
+        width: 20rem;
+        height: 14rem;
+        top: -160px;
+        left: 235px;
+    
+        z-index: -999;
     }
 
     #section1 .content-message .message {
