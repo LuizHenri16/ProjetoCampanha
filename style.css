@@ -66,7 +66,7 @@ body {
     padding: 3rem;
 }
 
-#section1 .content-main .title h1 {font-family: "GlacialFonteBold"; font-size: var(--fontSize-h1)}
+#section1 .content-main .title h1 {white-space: nowrap; font-family: "GlacialFonteBold"; font-size: var(--fontSize-h1)}
 #section1 .content-main .title p {font-size: 1rem; margin-left: 15rem; letter-spacing: 2px;}
 
 
@@ -90,6 +90,7 @@ body {
 }
 
 #section1 .content-message .message .text {
+    width: 90%;
     font-size: var(--fontSize-p);
     letter-spacing: 2px;
 }
@@ -212,7 +213,7 @@ body {
 }
 
 #section-donation .image-text img {
-    width: 26rem;
+    width: 23rem;
 }
 
 .valuetext {
