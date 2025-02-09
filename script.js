@@ -3,9 +3,6 @@ const dropdowns = document.querySelectorAll(".dropdown")
 // Coloco a div dropdown-content dentro dessa var constante chamada dropContentText
 const dropContentText = document.querySelectorAll(".dropdown-content")
 
-//alterar section1 
-const section1Content = document.querySelector("#section1 .content")
-
 
 function toggleDropdown(index) {
     dropdowns.forEach((dropdown, i) => {
@@ -22,12 +19,6 @@ dropContentText.forEach((dropContentText, index) => {
     })
 })
 
-// Link para o whatsapp, primeiro vou instanciar uma var e iniciar com o link do whatsapp, depois crio a função que vai ser executada ao clicar um botão
-const whatsAppLink = "https://wa.me/71984771099";
-function goToContact() {
-    window.open(whatsAppLink)
-}
-
 // Abrir o overlay com o código pix e qrcode
 function showOverlay(id) {
     document.getElementById(id).style.display = "flex";
@@ -40,7 +31,7 @@ function closeOverlay(id) {
     document.body.style.overflow = "auto"
 }
 
-// Copiar qrcode ao clicar no botão de copiar código
+// Copiar qrcode ao clicar no botão de copiar cóigo
 function copiarCodigo(id) {
     const codeElement = document.getElementById(id)
     const code = codeElement.textContent;
@@ -49,8 +40,3 @@ function copiarCodigo(id) {
         alert("Código copiado, cole no seu aplicativo de banco favorito!")
     })
 }
-
-
-
-
-

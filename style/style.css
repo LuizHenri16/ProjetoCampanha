@@ -1,0 +1,693 @@
+@font-face {
+  font-family: "GlacialFonteRegular";
+  src: url("/assets/fonts/GlacialIndifference-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "GlacialFonteBold";
+  src: url("/assets/fonts/GlacialIndifference-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "MontaserArabicRegular";
+  src: url("/assets/fonts/Montserrat-Arabic\ Regular\ 400.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "MontaserArabicBold";
+  src: url("/assets/fonts/Montserrat-Arabic\ Bold\ 700.otf") format("opentype");
+}
+@font-face {
+  font-family: "LeagueGotic";
+  src: url("/assets/fonts/LeagueGothic-Regular.ttf") format("opentype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #fff9f2;
+  --subttitle-color: #050a30;
+  --color-variant: #787672;
+
+  --font-glacialRegular: "GlacialFonteRegular", sans-serif;
+  --font-glacialBold: "GlacialFonteBold", sans-serif;
+  --font-montaserRegular: "MontaserArabicRegular";
+  --font-montaserBold: "MontaserArabicBold";
+  --font-leagueGotic: "LeagueGotic", sans-serif;
+
+  --font-size-logo: 0.8rem;
+  --font-size-title: 1.5rem;
+  --font-size-text: 0.7rem;
+  --font-size-aboutSubtitle: 0.9rem;
+  --font-size-donationSubtitle: 1.3rem;
+  --font-size-text2: 1.1rem;
+}
+
+#Header {
+  display: flex;
+}
+
+#Header .box-1 {
+  display: flex;
+  flex-direction: column;
+  width: 11rem;
+}
+
+#Header .box-1 .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+#Header .box-1 .logo img {
+  width: 1.5rem;
+}
+
+#Header .box-1 .logo p {
+  font-size: var(--font-size-logo);
+  font-family: var(--font-glacialRegular);
+}
+
+#Header .box-1 .title-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.5rem;
+
+  margin-top: 2rem;
+}
+
+#Header .box-1 .title-message h1 {
+  font-family: var(--font-montaserBold);
+  font-size: var(--font-size-title);
+  width: 10rem;
+  text-align: center;
+}
+
+#Header .box-1 .title-message p {
+  font-family: var(--font-glacialRegular);
+
+  font-size: var(--font-size-text);
+  text-align: center;
+  width: 9rem;
+}
+
+#Header .box-2 .image {
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+  width: 9rem;
+  height: 18rem;
+}
+
+#Header .box-2 .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#About {
+  display: flex;
+  margin-top: 4rem;
+  flex-direction: column;
+}
+
+#About .subtitle {
+  margin-left: 1.5rem;
+  font-family: var(--font-montaserBold);
+  font-size: var(--font-size-aboutSubtitle);
+}
+
+#About .box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+#About .box .image {
+  width: 10rem;
+  height: 12rem;
+}
+
+#About .box .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.infoButtonsSelectors {
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.dropbtn {
+  background: none;
+  width: 6rem;
+  height: 1.5rem;
+  font-size: 0.6rem;
+
+  border-radius: 25rem;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+
+  background-color: white;
+  max-height: 380px;
+  width: 140px;
+
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 1rem;
+  margin-left: -2rem;
+
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content p {
+  font-family: var(--font-glacialRegular);
+  color: black;
+  font-weight: 400;
+  font-size: 0.6rem;
+
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown.ativo .dropdown-content {
+  display: block;
+}
+
+#Donation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 2.5rem;
+}
+
+.line {
+  width: 100%;
+  height: 0.5px;
+  background-color: #000000;
+  margin: 5px 0;
+  border: none;
+}
+
+#Donation .subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 70%;
+  font-family: var(--font-leagueGotic);
+  font-size: var(--font-size-donationSubtitle);
+  letter-spacing: 0.1rem;
+  color: var(--subttitle-color);
+}
+
+#Donation .text-message {
+  text-align: center;
+  width: 90%;
+  margin-top: 1rem;
+
+  font-family: var(--font-glacialRegular);
+  font-size: var(--font-size-text);
+}
+
+#Donation .text-message-2 {
+  width: 90%;
+  margin-top: 1rem;
+
+  text-align: center;
+  font-size: var(--font-size-text2);
+  font-family: var(--font-leagueGotic);
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+  color: var(--subttitle-color);
+}
+
+#Donation .value-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+#Donation .value-text p {
+  font-family: var(--font-leagueGotic);
+  letter-spacing: 0.1rem;
+  color: var(--color-variant);
+}
+
+#Donation .value-text img {
+  width: 2rem;
+}
+
+/* botões de doação */
+
+.donationButtons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
+
+.donationButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 8rem;
+  height: 3.5rem;
+
+  border-radius: 10rem;
+  border: 1px solid black;
+  background: none;
+
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.donationButton:hover,
+.dropbtn:hover {
+  color: white;
+  background-color: #000000;
+  cursor: pointer;
+}
+
+/* ---------------------------------=--------------- */
+
+/* ---  Overlay Pix --- */
+
+.overlay {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+}
+
+.overlayContent {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--background-color);
+  z-index: 999;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overlayContent .box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overlayContent .closeButton {
+  align-self: flex-end;
+  background: none;
+  border: none;
+}
+
+.overlayContent .closeButton img {
+  width: 3.5rem;
+}
+
+.overlayContent .closeButton:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.overlayContent .copiarButton,
+.overlayContent .box button {
+  border: none;
+  border-radius: 5rem;
+  padding: 1rem;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 1.5rem;
+  gap: 0.5rem;
+
+  color: var(--cor-texto-primario);
+}
+
+.overlayContent .box .copytextmessage {
+  margin-top: 0.625rem;
+  font-size: 0.875rem;
+  font-family: var(--font-glacialRegular);
+  color: var(--color-variant);
+}
+
+.overlayContent .box .prooftext {
+  width: 22rem;
+  color: var(--cor-texto-secundario);
+  text-align: center;
+  font-size: 1rem;
+  font-family: var(--font-glacialRegular);
+  width: 90%;
+  margin-top: 2rem;
+}
+
+.overlayContent .box .prooftext span {
+  color: var(--cor-texto-3);
+  font-weight: 600;
+}
+
+.overlayContent .copiarButton {
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+.overlayContent .box button {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.overlayContent .box button img {
+  width: 2.4rem;
+}
+
+.overlayContent .copiarButton:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.overlayContent .box .value {
+  color: var(--cor-texto-secundario);
+}
+
+.overlayContent .box .qrCodebox {
+  margin-top: 0.625rem;
+  align-self: center;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0px 0px 5px 0px rgba(145, 145, 145, 1);
+}
+
+.overlayContent .box .qrCodebox img {
+  width: 12rem;
+}
+
+.hidden {
+  display: none;
+}
+
+#Footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#Footer .box {
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#Footer h3 {
+
+}
+
+#Footer .box-content {
+  display: flex;
+  gap: 4rem;
+  margin-top: 1rem;
+}
+
+#Footer .box-content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#Footer .box-content ul li a {
+  color: black;
+}
+
+#Footer .box-content ul li a:hover {
+  color: #787672;
+}
+
+#Footer .copyright {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  font-size: 0.8rem;
+  color: var(--color-variant);
+}
+
+@media (min-width: 365px) {
+  :root {
+    --font-size-logo: 1rem;
+    --font-size-title: 1.7rem;
+    --font-size-text: 0.9rem;
+    --font-size-aboutSubtitle: 1rem;
+    --font-size-donationSubtitle: 1.4rem;
+    --font-size-text2: 1.2rem;
+  }
+
+  #Header .box-1 .logo img {
+    width: 1.7rem;
+  }
+
+  #Header .box-1 {
+    width: 12.5rem;
+  }
+
+  #Header .box-1 .title-message p {
+    width: 11rem;
+  }
+
+  #Header .box-2 .image {
+    width: 10rem;
+    height: 21rem;
+  }
+
+  #About .box .image {
+    width: 11rem;
+    height: 13rem;
+  }
+
+  .dropbtn {
+    width: 7rem;
+    height: 1.6rem;
+  }
+}
+
+@media (min-width: 425px) {
+  :root {
+    --font-size-logo: 1.1rem;
+    --font-size-title: 1.9rem;
+    --font-size-text: 1rem;
+    --font-size-aboutSubtitle: 1.1rem;
+    --font-size-donationSubtitle: 1.6rem;
+    --font-size-text2: 1.4rem;
+  }
+
+  #Header .box-1 .logo img {
+    width: 1.9rem;
+  }
+
+  #Header .box-1 {
+    width: 14rem;
+  }
+
+  #Header .box-1 .title-message p {
+    width: 13rem;
+  }
+
+  #Header .box-2 .image {
+    width: 12rem;
+    height: 22rem;
+  }
+
+  #About .box .image {
+    width: 13rem;
+    height: 15rem;
+  }
+
+  .dropbtn {
+    width: 8rem;
+    height: 1.7rem;
+  }
+}
+
+@media (min-width: 525px) {
+  :root {
+    --font-size-logo: 1.2rem;
+    --font-size-title: 2.1rem;
+    --font-size-text: 1.2rem;
+    --font-size-aboutSubtitle: 1.2rem;
+    --font-size-donationSubtitle: 1.8rem;
+    --font-size-text2: 1.5rem;
+  }
+
+  #Header .box-1 .logo img {
+    width: 2rem;
+  }
+  #Header .box-1 {
+    width: 17rem;
+  }
+
+  #Header .box-1 .title-message p {
+    width: 16rem;
+  }
+
+  #Header .box-2 .image {
+    width: 15rem;
+    height: 24rem;
+  }
+
+  #About .box .image {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .infoButtonsSelectors {
+    margin-right: 3rem;
+  }
+
+  .dropbtn {
+    font-size: 0.8rem;
+    width: 9rem;
+    height: 1.9rem;
+  }
+}
+
+@media (min-width: 600px) {
+  #Header .box-1 {
+    width: 20rem;
+  } /*   Intermediário, não muda font-size */
+
+  #Header .box-1 .title-message p {
+    width: 18rem;
+  }
+
+  #Header .box-2 .image {
+    width: 17rem;
+    height: 25rem;
+  }
+
+  #About .box .image {
+    width: 17rem;
+    height: 17rem;
+  }
+
+  .infoButtonsSelectors {
+    margin-right: 4rem;
+  }
+
+  .dropbtn {
+    font-size: 1rem;
+    width: 11rem;
+    height: 2.2rem;
+  }
+}
+
+@media (min-width: 670px) {
+  :root {
+    --font-size-logo: 1.2rem;
+    --font-size-title: 2.1rem;
+    --font-size-text: 1.3rem;
+    --font-size-aboutSubtitle: 1.3rem;
+    --font-size-donationSubtitle: 1.9rem;
+    --font-size-text2: 1.6rem;
+  }
+
+  #Header .box-1 {
+    width: 22rem;
+  }
+
+  #Header .box-1 .title-message p {
+    width: 19rem;
+  }
+
+  #Header .box-2 .image {
+    width: 19rem;
+    height: 26rem;
+  }
+
+  #About .box .image {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .dropbtn {
+    font-size: 1rem;
+    width: 13rem;
+    height: 2.4rem;
+  }
+}
+
+@media (min-width: 780px) {
+
+  :root {
+    --font-size-title: 2.1rem;
+    --font-size-text: 1.3rem;
+    --font-size-aboutSubtitle: 1.3rem;
+    --font-size-donationSubtitle: 1.9rem;
+    --font-size-text2: 1.6rem;
+  }
+
+  #Header .box-1 {
+    width: 26rem;
+  }
+
+  #Header .box-1 .title-message p {
+    width: 24rem;
+  }
+
+  #Header .box-2 .image {
+    width: 22rem;
+    height: 28rem;
+  }
+
+  #About .box .image {
+    width: 22rem;
+    height: 22rem;
+  }
+
+
+  .infoButtonsSelectors {
+    margin-right: 5rem;
+  }
+
+  #Donation .value-text p {
+    font-size: 1.3rem;
+  }
+
+}

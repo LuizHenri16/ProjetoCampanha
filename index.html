@@ -1,183 +1,317 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/icons/HeartIcon.svg">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/style.css" />
     <title>Páscoa Solidária</title>
-</head>
-<body>
-    <header class="header">
-        <p class="welcome-text">Seja bem vindo(a) ao nosso espaço de doação!</p>
-    </header> 
-
+  </head>
+  <body>
     <main>
-        <section id="section1">
+      <section id="Header">
+        <div class="box-1">
+          <div class="logo">
+            <img src="assets/icons/logo.svg" alt="" />
+            <p>Páscoa Solidária</p>
+          </div>
 
-            <div class="content-main">
-                <div class="title">
-                    <h1>Páscoa Solidária</h1>
-                    <p>C.ABRIL</p>
-                    <img class="forma" src="assets/icons/forma.svg" alt="">
-                </div>
+          <div class="title-message">
+            <h1>Junte-se a Nós</h1>
+            <p>
+              Para algumas crianças a Páscoa é bem mais que apenas chocolate! A
+              atenção e o carinho nessa data aquece o coração dos nossos
+              pequeninos. <br />
+              Por isso, a sua doação é tão importante!
+            </p>
+          </div>
+        </div>
 
-                <div class="content-message">
-                    <div class="message">
-                        <p class="text">Para algumas crianças a <span>Páscoa</span> é bem mais que apenas chocolate! A atenção e o carinho nessa data aquece o coração dos nossos pequeninos. Por isso, a sua doação é tão importante!</p>
-                        <div class="donation-button"><button onclick="location.href='#section-donation'">Faça sua doação</button></div>
-                    </div>
-                    <div class="gif"><img class="gangorra" src="assets/icons/gangorra.gif" alt="gif gangorra com duas crianças brincando"></div>
-                </div>
+        <div class="box-2">
+          <div class="image">
+            <img
+              src="assets/images/photo-1.png"
+              alt="imagem de crianças em um parque com varias cestas contendo ovos de páscoa."
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="About">
+        <div class="subtitle">
+          <h2>Sobre a Campanha</h2>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img
+              src="assets/images/photo-2.png"
+              alt="Imagem de uma criança segurando um ovinho de páscoa."
+            />
+          </div>
+
+          <div id="infoButtonsSelectors" class="infoButtonsSelectors">
+            <div class="dropdown">
+              <button class="dropbtn" onclick="toggleDropdown(0)">
+                Quem somos?
+              </button>
+              <div class="dropdown-content">
+                <p>
+                  somos um grupo de amigos e acreditamos que o amor ao próximo
+                  se torna ativo quando há solidariedade. Somos voluntários e
+                  fazemos campanhas durante o ano para a arrecadação de doações
+                  desde 2020. Dedicamos tempo, cuidado e carinho organizando os
+                  projetos em abril (Páscoa Solidária) e em outubro (Dia das
+                  Crianças), mas são vocês, doadores, que permitem que os
+                  projetos aconteçam de fato!
+                </p>
+              </div>
             </div>
 
-            <div id="infoButtonsSelectors"  class="infoButtonsSelectors">
-
-                <div class="dropdown">
-                    <button class="dropbtn" onclick="toggleDropdown(0)">Quem somos?</button>
-                    <div class="dropdown-content">
-                        <p>somos um grupo de amigos e acreditamos que o amor ao próximo se torna ativo quando há solidariedade. Somos voluntários e fazemos campanhas durante o ano para a arrecadação de doações desde 2020. Dedicamos tempo, cuidado e carinho organizando os projetos em abril (Páscoa Solidária) e em outubro (Dia das Crianças), mas são vocês, doadores, que permitem que os projetos aconteçam de fato!</p>
-                    </div>
-                </div>
-
-                <div class="dropdown">
-                    <button class="dropbtn" onclick="toggleDropdown(1)">Qual objetivo?</button>
-                    <div class="dropdown-content">
-                        <p>Temos um único objetivo: levar alegria para o dia de algumas crianças. E garantimos que sua doação vai ajudar diretamente nisso. Com todo o valor arrecadado, compramos ovos de Páscoa, chocolates, brinquedos, tudo que a criançada espera nessas datas festivas. A alegria no olhar dos pequeninos ao receber nossas visitas com todos os presentes é inesquecível. Nada é mais perfeito e cheio de esperança do que o sorriso de uma criança feliz!</p>
-                    </div>
-                </div>
-
-                <div class="dropdown" >
-                    <button class="dropbtn" onclick="toggleDropdown(2)">Como ajudar?</button>
-                    <div class="dropdown-content"> 
-                        <p>Você pode ajudar de várias maneiras: com doações financeiras, divulgando nossas campanhas ou fazendo doações de brinquedos/livros infantis. A ajuda financeira é por aqui mesmo, é só escolher um valor, garantimos a segurança dos links pelo pix. Para divulgar nossas campanhas, basta entrar em contato conosco, para as doações de brinquedos também, é só nos mandar uma mensagem pelo WhatsApp. A sua participação nos ajuda a aumentar a nossa base de doadores e, assim, mais crianças poderão ser beneficiadas.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="section-donation">
-            
-            <div class="image-text">
-                <p class="campanha-text">A campanha da Páscoa Solidária ficará aberta até o dia <span>19/04/2025</span>. Depois dessa data, você
-                    receberá uma mensagem com fotos e mais informações sobre as crianças beneficiadas. Atuamos 
-                   na Casa de Passagem da nossa cidade, local onde as crianças estão. Garantimos a transparência de nossas ações. </p>
-                <img src="assets/icons/donation-image.svg" alt="">
-                <p class="valuetext">Escolha um valor</p>
+            <div class="dropdown">
+              <button class="dropbtn" onclick="toggleDropdown(1)">
+                Qual objetivo?
+              </button>
+              <div class="dropdown-content">
+                <p>
+                  Temos um único objetivo: levar alegria para o dia de algumas
+                  crianças. E garantimos que sua doação vai ajudar diretamente
+                  nisso. Com todo o valor arrecadado, compramos ovos de Páscoa,
+                  chocolates, brinquedos, tudo que a criançada espera nessas
+                  datas festivas. A alegria no olhar dos pequeninos ao receber
+                  nossas visitas com todos os presentes é inesquecível. Nada é
+                  mais perfeito e cheio de esperança do que o sorriso de uma
+                  criança feliz!
+                </p>
+              </div>
             </div>
 
-            <div class="donationButtons">
-                <button class="donationButton" onclick="showOverlay('overlay1')">
-                    R$ 10,00
-                </button>
-                <button class="donationButton" onclick="showOverlay('overlay2')"> 
-                    R$ 20,00
-                </button>
-                <button class="donationButton" onclick="showOverlay('overlay3')">
-                    R$ 30,00
-                </button>
-                <button class="donationButton" onclick="showOverlay('overlay4')">
-                  R$ 40,00
-                </button>
+            <div class="dropdown">
+              <button class="dropbtn" onclick="toggleDropdown(2)">
+                Como ajudar?
+              </button>
+              <div class="dropdown-content">
+                <p>
+                  Você pode ajudar de várias maneiras: com doações financeiras,
+                  divulgando nossas campanhas ou fazendo doações de
+                  brinquedos/livros infantis. A ajuda financeira é por aqui
+                  mesmo, é só escolher um valor, garantimos a segurança dos
+                  links pelo pix. Para divulgar nossas campanhas, basta entrar
+                  em contato conosco, para as doações de brinquedos também, é só
+                  nos mandar uma mensagem pelo WhatsApp. A sua participação nos
+                  ajuda a aumentar a nossa base de doadores e, assim, mais
+                  crianças poderão ser beneficiadas.
+                </p>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div id="overlay1" class="overlay">
-                <div class="overlayContent">
-                    <button class="closeButton" onclick="closeOverlay('overlay1')"><img src="assets/icons/close-button.svg" alt=""></button>
-                        <div class="box">
-                            <p class="value">Valor: R$ 10,00</p>
-                            <div class="qrCodebox"><img class="qrCode" src="assets/image/qrcodeExemplo.png" alt="QR Code"></div>
-                            <p class="copytextmessage">Aponte para a tela ou copie o código</p>
-                            <button class="copiarButton" onclick="copiarCodigo('pixCode1')">Copiar código</button>
-                            <p class="prooftext"><span>Envie seu comprovante clicando no botão abaixo.</span>Você será redirecionado para o nosso WhatsApp!</p>
-                            <button proofButton onclick=goToContact()><img src="assets/icons/Whatsapp.svg" alt="">enviar comprovante</button>
-                            <p id="pixCode1" class="hidden">10</p>
-                        </div>
-                    
-                </div>
+      <section id="Donation">
+        <div class="subtitle">
+          <div class="line"></div>
+          <h3>Prazos e Doação</h3>
+        </div>
+
+        <div class="text-message">
+          <p>
+            A Campanha da Páscoa Solidária ficará aberta até o dia
+            <span>19/04/2025.</span>
+            Depois dessa data, você receberá uma mensagem com fotos dos itens
+            comprados e mais informações sobre as crianças beneficiadas. Atuamos
+            na Casa de Passagem da nossa cidade, local onde as crianças estão.
+            Garantimos a transparência de nossas ações.
+          </p>
+        </div>
+
+        <div class="text-message-2">
+          <p>
+            Através do Pix, você pode fazer sua parte e alegrar o dia de algumas
+            crianças ; )
+          </p>
+        </div>
+
+        <div class="value-text">
+          <p>Escolha um valor</p>
+          <img src="assets/icons/heart.svg" alt="" />
+        </div>
+
+        <div class="donationButtons">
+          <button class="donationButton" onclick="showOverlay('overlay1')">
+            R$ <br />
+            10,00
+          </button>
+          <button class="donationButton" onclick="showOverlay('overlay2')">
+            R$ <br />
+            20,00
+          </button>
+          <button class="donationButton" onclick="showOverlay('overlay3')">
+            R$ <br />
+            30,00
+          </button>
+          <button class="donationButton" onclick="showOverlay('overlay4')">
+            R$ <br />
+            40,00
+          </button>
+        </div>
+
+        <div id="overlay1" class="overlay">
+          <div class="overlayContent">
+            <button class="closeButton" onclick="closeOverlay('overlay1')">
+              <img src="assets/icons/close-button.svg" alt="" />
+            </button>
+            <div class="box">
+              <p class="value">Valor: R$ 10,00</p>
+              <div class="qrCodebox">
+                <img
+                  class="qrCode"
+                  src="/assets/images/qrcodeExemplo.png"
+                  alt="QR Code"
+                />
+              </div>
+              <p class="copytextmessage">
+                Aponte para a tela ou copie o código
+              </p>
+              <button class="copiarButton" onclick="copiarCodigo('pixCode1')">
+                Copiar código
+              </button>
+              <p class="prooftext">
+                <span>Envie seu comprovante clicando no botão abaixo.</span>Você
+                será redirecionado para o nosso WhatsApp!
+              </p>
+              <button proofButton onclick="goToContact()">
+                <img src="assets/icons/Whatsapp.svg" alt="" />enviar comprovante
+              </button>
+              <p id="pixCode1" class="hidden">10</p>
             </div>
+          </div>
+        </div>
 
-            <div id="overlay2" class="overlay" >
-                <div class="overlayContent">
-                    <button class="closeButton" onclick="closeOverlay('overlay2')"><img src="assets/icons/close-button.svg" alt=""></button>
-                    <div class="box">
-                        <p class="value">Valor: R$ 20,00</p>
-                        <div class="qrCodebox"><img class="qrCode" src="assets/image/qrcodeExemplo.png" alt="QR Code"></div>
-                        <p class="copytextmessage">Aponte para a tela ou copie o código</p>
-                        <button class="copiarButton" onclick="copiarCodigo('pixCode1')">Copiar código</button>
-                        <p class="prooftext"><span>Envie seu comprovante clicando no botão abaixo.</span>Você será redirecionado para o nosso WhatsApp!</p>
-                        <button proofButton onclick=goToContact()><img src="assets/icons/Whatsapp.svg" alt="">enviar comprovante</button>
-                        <p id="pixCode1" class="hidden">20</p>
-                    </div>
-                </div>
+        <div id="overlay2" class="overlay">
+          <div class="overlayContent">
+            <button class="closeButton" onclick="closeOverlay('overlay2')">
+              <img src="assets/icons/close-button.svg" alt="" />
+            </button>
+            <div class="box">
+              <p class="value">Valor: R$ 20,00</p>
+              <div class="qrCodebox">
+                <img
+                  class="qrCode"
+                  src="/assets/images/qrcodeExemplo.png"
+                  alt="QR Code"
+                />
+              </div>
+              <p class="copytextmessage">
+                Aponte para a tela ou copie o código
+              </p>
+              <button class="copiarButton" onclick="copiarCodigo('pixCode1')">
+                Copiar código
+              </button>
+              <p class="prooftext">
+                <span>Envie seu comprovante clicando no botão abaixo.</span>Você
+                será redirecionado para o nosso WhatsApp!
+              </p>
+              <button proofButton onclick="goToContact()">
+                <img src="assets/icons/Whatsapp.svg" alt="" />enviar comprovante
+              </button>
+              <p id="pixCode1" class="hidden">20</p>
             </div>
+          </div>
+        </div>
 
-            <div id="overlay3" class="overlay">
-                <div class="overlayContent">
-                    <button class="closeButton" onclick="closeOverlay('overlay3')"><img src="assets/icons/close-button.svg" alt=""></button>
-                    <div class="box">
-                        <p class="value">Valor: R$ 30,00</p>
-                        <div class="qrCodebox"><img class="qrCode" src="assets/image/qrcodeExemplo.png" alt="QR Code"></div>
-                        <p class="copytextmessage">Aponte para a tela ou copie o código</p>
-                        <button class="copiarButton" onclick="copiarCodigo('pixCode1')">Copiar código</button>
-                        <p class="prooftext"><span>Envie seu comprovante clicando no botão abaixo.</span>Você será redirecionado para o nosso WhatsApp!</p>
-                        <button proofButton onclick=goToContact()><img src="assets/icons/Whatsapp.svg" alt="">enviar comprovante</button>
-                        <p id="pixCode1" class="hidden">30</p>
-                    </div>
-                </div>
+        <div id="overlay3" class="overlay">
+          <div class="overlayContent">
+            <button class="closeButton" onclick="closeOverlay('overlay3')">
+              <img src="assets/icons/close-button.svg" alt="" />
+            </button>
+            <div class="box">
+              <p class="value">Valor: R$ 30,00</p>
+              <div class="qrCodebox">
+                <img
+                  class="qrCode"
+                  src="/assets/images/qrcodeExemplo.png"
+                  alt="QR Code"
+                />
+              </div>
+              <p class="copytextmessage">
+                Aponte para a tela ou copie o código
+              </p>
+              <button class="copiarButton" onclick="copiarCodigo('pixCode1')">
+                Copiar código
+              </button>
+              <p class="prooftext">
+                <span>Envie seu comprovante clicando no botão abaixo.</span>Você
+                será redirecionado para o nosso WhatsApp!
+              </p>
+              <button proofButton onclick="goToContact()">
+                <img src="assets/icons/Whatsapp.svg" alt="" />enviar comprovante
+              </button>
+              <p id="pixCode1" class="hidden">30</p>
             </div>
+          </div>
+        </div>
 
-            <div id="overlay4" class="overlay">
-                <div class="overlayContent">
-                    <button class="closeButton" onclick="closeOverlay('overlay4')"><img src="assets/icons/close-button.svg" alt=""></button>
-                    <div class="box">
-                        <p class="value">Valor: R$ 40,00</p>
-                        <div class="qrCodebox"><img class="qrCode" src="assets/image/qrcodeExemplo.png" alt="QR Code"></div>
-                        <p class="copytextmessage">Aponte para a tela ou copie o código</p>
-                        <button class="copiarButton" onclick="copiarCodigo('pixCode1')">Copiar código</button>
-                        <p class="prooftext"><span>Envie seu comprovante clicando no botão abaixo.</span>Você será redirecionado para o nosso WhatsApp!</p>
-                        <button proofButton onclick=goToContact()><img src="assets/icons/Whatsapp.svg" alt="">enviar comprovante</button>
-                        <p id="pixCode1" class="hidden">40</p>
-                    </div>
-                </div>
+        <div id="overlay4" class="overlay">
+          <div class="overlayContent">
+            <button class="closeButton" onclick="closeOverlay('overlay4')">
+              <img src="assets/icons/close-button.svg" alt="" />
+            </button>
+            <div class="box">
+              <p class="value">Valor: R$ 40,00</p>
+              <div class="qrCodebox">
+                <img
+                  class="qrCode"
+                  src="/assets/images/qrcodeExemplo.png"
+                  alt="QR Code"
+                />
+              </div>
+              <p class="copytextmessage">
+                Aponte para a tela ou copie o código
+              </p>
+              <button class="copiarButton" onclick="copiarCodigo('pixCode1')">
+                Copiar código
+              </button>
+              <p class="prooftext">
+                <span>Envie seu comprovante clicando no botão abaixo.</span>Você
+                será redirecionado para o nosso WhatsApp!
+              </p>
+              <button proofButton onclick="goToContact()">
+                <img src="assets/icons/Whatsapp.svg" alt="" />enviar comprovante
+              </button>
+              <p id="pixCode1" class="hidden">40</p>
             </div>
-
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer id="footer">
-        <div class="footer-content">
-            <div class="conferir-content">
-                <div class="title-conferir">
-                    <h4 class="conferir-h4">CONFERIR</h4>
-                </div>
-                <div class="hyperlinks">
-                    <a href="#infoButtonsSelectors">Sobre</a>
-                    <a href="#infoButtonsSelectors">Objetivo</a>
-                    <a href="#infoButtonsSelectors">Ajuda</a>
-                </div>
-            </div>
-            <div class="duvidas-content">
-                <div class="title-duvidas">
-                    <h4 class="duvidas-h4">DÚVIDAS</h4>
-                </div>
-                <div class="hyperlinks">
-                    <a href="">Contato</a>
-                    <a href="#section-donation">Prazos e pagamentos</a>
-                </div>
-            </div>
+    <footer id="Footer">
+      <div class="line"></div>
+      <div class="box">
+        <h3>Páscoa Solidária</h3>
+        <div class="box-content">
+          <div class="about">
+            <ul>
+              <li><a href="">Sobre</a></li>
+              <li><a href="">Objetivo</a></li>
+              <li><a href="">Ajude</a></li>
+            </ul>
+          </div>
+          <div class="help">
+            <ul>
+              <li><a href="">Contato</a></li>
+              <li><a href="">Prazos e pagamentos</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
 
-        <div class="footer-content-2">
-            <div class="line"></div>
-            
-            <div class="copyright">
-                <p class="copyright-message">© 2025. Com amor, por Edilene Vieira.</p>
-            </div>
-        </div>
-        
+      <div class="line"></div>
+
+      <div class="copyright">
+        <p>© 2025, Com amor, por Edilene Vieira.</p>
+      </div>
     </footer>
-</body>
+  </body>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </html>
