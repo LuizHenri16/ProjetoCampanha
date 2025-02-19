@@ -47,26 +47,29 @@
   --font-size-text2: 1.1rem;
 }
 
+body {
+  background-color: var(--background-color);
+}
+
 #Header {
   display: flex;
+  width: 100%;
 }
 
 #Header .box-1 {
   display: flex;
   flex-direction: column;
-  width: 11rem;
+  padding: 1rem;
 }
 
 #Header .box-1 .logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  margin-left: 0.5rem;
-  margin-top: 0.2rem;
+  gap: 0.4rem;
 }
 
 #Header .box-1 .logo img {
-  width: 1.5rem;
+  width: 1.2rem;
 }
 
 #Header .box-1 .logo p {
@@ -75,36 +78,30 @@
 }
 
 #Header .box-1 .title-message {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  padding: 0.5rem;
-
   margin-top: 2rem;
 }
 
 #Header .box-1 .title-message h1 {
   font-family: var(--font-montaserBold);
   font-size: var(--font-size-title);
-  width: 10rem;
+  text-align: center;
+}
+
+#Header .box-1 .title-message {
+  font-family: var(--font-glacialRegular);
+  font-size: var(--font-size-text);
   text-align: center;
 }
 
 #Header .box-1 .title-message p {
-  font-family: var(--font-glacialRegular);
-
-  font-size: var(--font-size-text);
-  text-align: center;
-  width: 9rem;
+  padding: 0 0.5rem;
+  margin-top: 1rem;
 }
 
 #Header .box-2 .image {
-  position: absolute;
-  right: 0;
   overflow: hidden;
-  width: 9rem;
-  height: 18rem;
+  width: 8rem;
+  height: 16rem;
 }
 
 #Header .box-2 .image img {
@@ -115,7 +112,7 @@
 
 #About {
   display: flex;
-  margin-top: 4rem;
+  margin-top: 2rem;
   flex-direction: column;
 }
 
@@ -126,11 +123,9 @@
 }
 
 #About .box {
-  width: 100%;
   display: flex;
-  justify-content: space-between;
-  margin-top: 1rem;
   align-items: center;
+  margin-top: 1rem;
 }
 
 #About .box .image {
@@ -145,10 +140,10 @@
 }
 
 .infoButtonsSelectors {
-  margin-right: 2rem;
   display: flex;
+  gap: 1rem;
   flex-direction: column;
-  gap: 1.5rem;
+  margin: auto;
 }
 
 .dropbtn {
@@ -438,7 +433,6 @@
 }
 
 #Footer h3 {
-
 }
 
 #Footer .box-content {
@@ -484,14 +478,6 @@
     width: 1.7rem;
   }
 
-  #Header .box-1 {
-    width: 12.5rem;
-  }
-
-  #Header .box-1 .title-message p {
-    width: 11rem;
-  }
-
   #Header .box-2 .image {
     width: 10rem;
     height: 21rem;
@@ -512,7 +498,7 @@
   :root {
     --font-size-logo: 1.1rem;
     --font-size-title: 1.9rem;
-    --font-size-text: 1rem;
+    --font-size-text: 0.9rem;
     --font-size-aboutSubtitle: 1.1rem;
     --font-size-donationSubtitle: 1.6rem;
     --font-size-text2: 1.4rem;
@@ -522,21 +508,13 @@
     width: 1.9rem;
   }
 
-  #Header .box-1 {
-    width: 14rem;
-  }
-
-  #Header .box-1 .title-message p {
-    width: 13rem;
-  }
-
   #Header .box-2 .image {
     width: 12rem;
     height: 22rem;
   }
 
   #About .box .image {
-    width: 13rem;
+    width: 15rem;
     height: 15rem;
   }
 
@@ -550,7 +528,7 @@
   :root {
     --font-size-logo: 1.2rem;
     --font-size-title: 2.1rem;
-    --font-size-text: 1.2rem;
+    --font-size-text: 1rem;
     --font-size-aboutSubtitle: 1.2rem;
     --font-size-donationSubtitle: 1.8rem;
     --font-size-text2: 1.5rem;
@@ -559,26 +537,15 @@
   #Header .box-1 .logo img {
     width: 2rem;
   }
-  #Header .box-1 {
-    width: 17rem;
-  }
-
-  #Header .box-1 .title-message p {
-    width: 16rem;
-  }
 
   #Header .box-2 .image {
-    width: 15rem;
+    width: 12rem;
     height: 24rem;
   }
 
   #About .box .image {
     width: 16rem;
     height: 16rem;
-  }
-
-  .infoButtonsSelectors {
-    margin-right: 3rem;
   }
 
   .dropbtn {
@@ -589,26 +556,14 @@
 }
 
 @media (min-width: 600px) {
-  #Header .box-1 {
-    width: 20rem;
-  } /*   Intermediário, não muda font-size */
-
-  #Header .box-1 .title-message p {
-    width: 18rem;
-  }
-
   #Header .box-2 .image {
     width: 17rem;
     height: 25rem;
   }
 
   #About .box .image {
-    width: 17rem;
-    height: 17rem;
-  }
-
-  .infoButtonsSelectors {
-    margin-right: 4rem;
+    width: 19rem;
+    height: 19rem;
   }
 
   .dropbtn {
@@ -628,22 +583,14 @@
     --font-size-text2: 1.6rem;
   }
 
-  #Header .box-1 {
-    width: 22rem;
-  }
-
-  #Header .box-1 .title-message p {
-    width: 19rem;
-  }
-
   #Header .box-2 .image {
     width: 19rem;
     height: 26rem;
   }
 
   #About .box .image {
-    width: 18rem;
-    height: 18rem;
+    width: 24rem;
+    height: 24rem;
   }
 
   .dropbtn {
@@ -654,7 +601,6 @@
 }
 
 @media (min-width: 780px) {
-
   :root {
     --font-size-title: 2.1rem;
     --font-size-text: 1.3rem;
@@ -663,31 +609,82 @@
     --font-size-text2: 1.6rem;
   }
 
-  #Header .box-1 {
-    width: 26rem;
-  }
-
-  #Header .box-1 .title-message p {
-    width: 24rem;
-  }
-
   #Header .box-2 .image {
     width: 22rem;
     height: 28rem;
   }
 
   #About .box .image {
-    width: 22rem;
-    height: 22rem;
-  }
-
-
-  .infoButtonsSelectors {
-    margin-right: 5rem;
+    width: 26rem;
+    height: 26rem;
   }
 
   #Donation .value-text p {
     font-size: 1.3rem;
   }
+}
 
+@media (min-width: 870px) {
+  :root {
+    --font-size-title: 2.1rem;
+    --font-size-text: 1.3rem;
+    --font-size-aboutSubtitle: 1.3rem;
+    --font-size-donationSubtitle: 1.9rem;
+    --font-size-text2: 1.6rem;
+  }
+
+  #Header .box-2 .image {
+    width: 24rem;
+    height: 28rem;
+  }
+
+  #About .box .image {
+    width: 27rem;
+    height: 27rem;
+  }
+
+  .infoButtonsSelectors .dropdown .dropbtn {
+    width: 15rem;
+  }
+
+  #Donation .value-text p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --font-size-title: 2.1rem;
+    --font-size-text: 1.3rem;
+    --font-size-aboutSubtitle: 1.3rem;
+    --font-size-donationSubtitle: 1.9rem;
+    --font-size-text2: 1.6rem;
+  }
+
+  #Header .box-1 .title-message p {
+    padding: 0 5rem;
+  }
+
+  #Header .box-2 .image {
+    width: 30rem;
+    height: 34rem;
+  }
+
+  #About .box .image {
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .infoButtonsSelectors {
+  }
+
+  .infoButtonsSelectors .dropdown .dropbtn {
+    width: 20rem;
+    height: 3.5rem;
+    font-size: 1.2rem;
+  }
+
+  #Donation .value-text p {
+    font-size: 1.3rem;
+  }
 }
