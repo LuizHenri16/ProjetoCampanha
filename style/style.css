@@ -26,6 +26,7 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -78,7 +79,7 @@ body {
 }
 
 #Header .box-1 .title-message {
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 #Header .box-1 .title-message h1 {
