@@ -49,7 +49,7 @@ window.addEventListener('scroll', function() {
         header.style.backgroundColor = "#447afb";
         headerText.style.color = "white"
     } else if (window.screenY < 100) {
-        header.style.backgroundColor = "white";
+        header.style.backgroundColor = "#fafcff";
          headerText.style.color = "#284cf3"
     }
 })
