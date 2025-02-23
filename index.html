@@ -3,54 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style/style.css" />
     <title>Páscoa Solidária</title>
   </head>
   <body>
+    <header id="Header">
+      <div class="logo">
+        <img src="assets/icons/logo.svg" alt="" />
+        <p>Páscoa <span>Solidária</span></p>
+      </div>
+
+      <div class="menu-hamburger">
+        <button class="hamburger-button">aaa<img src="" alt="" /></button>
+      </div>
+    </header>
+
     <main>
-      <section id="Header">
-        <div class="box-1">
-          <div class="logo">
-            <img src="assets/icons/logo.svg" alt="" />
-            <p>Páscoa Solidária</p>
-          </div>
 
-          <div class="title-message">
-            <h1>Junte-se a Nós</h1>
-            <p>
-              Para algumas crianças a Páscoa é bem mais que apenas chocolate! A
-              atenção e o carinho nessa data aquece o coração dos nossos
-              pequeninos. Por isso, a sua doação é tão importante!
-            </p>
-          </div>
+      <section id="Content-main">
+        <div class="maincontent-image">
+            <img src="assets/images/imagem1.svg" alt="">
         </div>
-
-        <div class="box-2">
-          <div class="image">
-            <img
-              src="assets/images/photo-1.png"
-              alt="imagem de crianças em um parque com varias cestas contendo ovos de páscoa."
-            />
-          </div>
-        </div>
+          <h1>Junte-se a Nós
+          </h1>
+          <p>Para muitas crianças, a Páscoa é mais do que chocolate: é sobre carinho e atenção. <span>Por isso, sua doação é tão importante!</span></p>
       </section>
 
       <section id="About">
-        <div class="subtitle">
-          <h2>Sobre a Campanha</h2>
-        </div>
-        <div class="box">
-          <div class="image">
-            <img
-              src="assets/images/photo-2.png"
-              alt="Imagem de uma criança segurando um ovinho de páscoa."
-            />
+
+          <div id="About-main">
+              <h1>Sobre a Campanha</h1>
+              <p><span>A PÁSCOA SOLIDÁRIA é uma iniciativa voluntária</span>. O sorriso dos pequeninos é a nossa recompensa :)</p>
           </div>
+
 
           <div id="infoButtonsSelectors" class="infoButtonsSelectors">
             <div class="dropdown">
               <button class="dropbtn" onclick="toggleDropdown(0)">
-                Quem somos?
+                Quem somos
               </button>
               <div class="dropdown-content">
                 <p>
@@ -67,7 +65,7 @@
 
             <div class="dropdown">
               <button class="dropbtn" onclick="toggleDropdown(1)">
-                Qual objetivo?
+                Qual objetivo
               </button>
               <div class="dropdown-content">
                 <p>
@@ -85,7 +83,7 @@
 
             <div class="dropdown">
               <button class="dropbtn" onclick="toggleDropdown(2)">
-                Como ajudar?
+                Como ajudar
               </button>
               <div class="dropdown-content">
                 <p>
@@ -111,15 +109,13 @@
           <h3>Prazos e Doação</h3>
         </div>
 
-        <div class="text-message">
-          <p>
-            A Campanha da Páscoa Solidária ficará aberta até o dia
-            <span>19/04/2025.</span>
-            Depois dessa data, você receberá uma mensagem com fotos dos itens
-            comprados e mais informações sobre as crianças beneficiadas. Atuamos
-            na Casa de Passagem da nossa cidade, local onde as crianças estão.
-            Garantimos a transparência de nossas ações.
-          </p>
+        <div class="list-message">
+          <ul>
+            <li><p> A campanha ficará aberta até o dia <span>19/04/2025</span></p></li>
+            <li><p> Após a Páscoa, você receberá fotos dos intens comprados e informações sobre as crianças beneficiadas.</p></li>
+            <li><p> Atuamos na Casa de Passagem da nossa cidade.</p></li>
+            <li><p> Garantimos a <span>segurança do PIX pelos links.</span></p></li>
+          </ul>
         </div>
 
         <div class="text-message-2">
@@ -284,23 +280,13 @@
     </main>
 
     <footer id="Footer">
-      <div class="line"></div>
       <div class="box">
-        <h3>Páscoa Solidária</h3>
         <div class="box-content">
-          <div class="about">
             <ul>
+              <li><a href="">Dúvidas</a></li>
+              <li><a href="">Fale conosco</a></li>
               <li><a href="">Sobre</a></li>
-              <li><a href="">Objetivo</a></li>
-              <li><a href="">Ajude</a></li>
             </ul>
-          </div>
-          <div class="help">
-            <ul>
-              <li><a href="">Contato</a></li>
-              <li><a href="">Prazos e pagamentos</a></li>
-            </ul>
-          </div>
         </div>
       </div>
 

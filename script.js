@@ -3,6 +3,9 @@ const dropdowns = document.querySelectorAll(".dropdown")
 // Coloco a div dropdown-content dentro dessa var constante chamada dropContentText
 const dropContentText = document.querySelectorAll(".dropdown-content")
 
+const header = document.getElementById("Header")
+const headerText = document.querySelector("#Header .logo p span")
+
 
 function toggleDropdown(index) {
     dropdowns.forEach((dropdown, i) => {
@@ -40,3 +43,14 @@ function copiarCodigo(id) {
         alert("Código copiado, cole no seu aplicativo de banco favorito!")
     })
 }
+
+window.addEventListener('scroll', function() {
+    if(window.scrollY > 40) {
+        header.style.backgroundColor = "#447afb";
+        headerText.style.color = "white"
+    } else if (window.screenY < 100) {
+        header.style.backgroundColor = "white";
+         headerText.style.color = "#284cf3"
+    }
+})
+
