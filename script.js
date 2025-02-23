@@ -1,6 +1,4 @@
-// Coloco a div dropdown dentro dessa var constante chamada dropdowns, pegando assim todas as existentes
 const dropdowns = document.querySelectorAll(".dropdown")
-// Coloco a div dropdown-content dentro dessa var constante chamada dropContentText
 const dropContentText = document.querySelectorAll(".dropdown-content")
 
 const header = document.getElementById("Header")

@@ -13,7 +13,7 @@
 
   --logo-fontsize: 1.2rem;
   --title-fontsize: 3rem;
-  --subtitle-fontisize:2.5rem;
+  --subtitle-fontisize:2.4rem;
   --text-fontsize: 1.2rem;
 
 }
@@ -46,12 +46,29 @@ body {
 }
 
 #Header .logo p {
-  font-size: 1.2rem;
+  font-size: var(--font-size-logo);
   font-family: "Chau Philomene One", serif;
 }
 
 #Header .logo p span {
   color: var(--secondary-color);
+}
+
+#Header .menu-hamburger button {
+  background: none;
+  border: none;
+  padding: .2rem;
+  width: 2.5rem;
+  cursor: pointer;
+
+}
+#Header .menu-hamburger button img {
+  width: 100%;
+  height: 100%;
+}
+
+#Header .menu-hamburger button:hover {
+  opacity: .9;
 }
 
 main {
@@ -81,7 +98,7 @@ main {
 
 #Content-main h1 {
   font-family: "Open Sans", serif;
-  font-size: 3rem;
+  font-size: var(--title-fontsize);
   font-weight: 800;
   width: 15rem;
   letter-spacing: 2px;
@@ -89,9 +106,11 @@ main {
 
 #Content-main p, #About-main p {
   color: #787672;
-  font-size: 1.2rem;
+  font-size: var(--text-fontsize);
   font-weight: 500;
   padding: 0 1rem;
+
+  margin-top: 1.5rem;
 }
 
 #Content-main p span, #About-main p span {
@@ -101,7 +120,7 @@ main {
 
 #About-main h1 {
   font-family: "Open Sans", serif;;
-  font-size: 2.4rem;
+  font-size: var(--subtitle-fontisize);
   font-weight: 800;
   margin-top: 3rem;
 }
@@ -139,14 +158,14 @@ main {
   position: absolute;
 
   background-color: white;
-  max-height: 380px;
-  width: 140px;
+  max-height: 400px;
+  width: 230px;
 
   padding: 0.5rem;
   text-align: center;
   border-radius: 1rem;
   border: none;
-  margin-left: -2rem;
+  margin-left: -.2rem;
 
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -156,7 +175,7 @@ main {
   font-family:  "Open Sans", serif;
   color: black;
   font-weight: 400;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
 
   text-decoration: none;
   display: block;
@@ -176,7 +195,7 @@ main {
 
 #Donation .subtitle h3 {
   font-family: "Open Sans", serif;
-  font-size: 2.1rem;
+  font-size: var(--subtitle-fontisize);
   font-weight: 700;
 }
 
