@@ -11,9 +11,9 @@
   --primary-color: #447afb;
   --secondary-color: #284cf3;
 
-  --logo-fontsize: 1.2rem;
+  --logo-fontsize: 1.3rem;
   --title-fontsize: 3rem;
-  --subtitle-fontisize:2.4rem;
+  --subtitle-fontisize:2.3rem;
   --text-fontsize: 1.2rem;
 
 }
@@ -29,13 +29,13 @@ body {
   align-items: center;
   padding: .5rem;
   background-color: none;
-  z-index: 999;
+  z-index: 100;
 
   position: fixed;
   top: 0;
 
   width: 100%;
-  height: 3rem;
+  height: 3.5rem;
 }
 
 #Header .logo {
@@ -45,9 +45,14 @@ body {
   gap: .5rem;
 }
 
+.logo img {
+  width: 2rem;
+}
+
 #Header .logo p {
-  font-size: var(--font-size-logo);
+  font-size: var(--logo-fontsize);
   font-family: "Chau Philomene One", serif;
+  letter-spacing: .5px;
 }
 
 #Header .logo p span {
@@ -58,7 +63,7 @@ body {
   background: none;
   border: none;
   padding: .2rem;
-  width: 2.5rem;
+  width: 2rem;
   cursor: pointer;
 
 }
@@ -68,7 +73,7 @@ body {
 }
 
 #Header .menu-hamburger button:hover {
-  opacity: .9;
+  opacity: .8;
 }
 
 main {
@@ -83,8 +88,15 @@ main {
   display: flex;
   flex-direction: column;
 }
+#Content-main .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
 #Content-main .maincontent-image img {
-  width: 18rem;
+  width: 19rem;
 }
 
 #Content-main, #About-main {
@@ -122,7 +134,7 @@ main {
   font-family: "Open Sans", serif;;
   font-size: var(--subtitle-fontisize);
   font-weight: 800;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 .infoButtonsSelectors {
@@ -158,14 +170,14 @@ main {
   position: absolute;
 
   background-color: white;
-  max-height: 400px;
-  width: 230px;
+  max-height: 430px;
+  width: 280px;
 
-  padding: 0.5rem;
-  text-align: center;
+  padding: 1rem;
+  text-align: start;
   border-radius: 1rem;
   border: none;
-  margin-left: -.2rem;
+  margin-left: -1.8rem;
 
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -173,12 +185,17 @@ main {
 
 .dropdown-content p {
   font-family:  "Open Sans", serif;
-  color: black;
-  font-weight: 400;
-  font-size: 0.7rem;
+  color: #464646;
+  font-weight: 500;
+  font-size: 0.9rem;
 
   text-decoration: none;
   display: block;
+}
+
+.dropdown-content p span {
+  color: black;
+  font-weight: 600;
 }
 
 .dropdown.ativo .dropdown-content {
@@ -196,7 +213,7 @@ main {
 #Donation .subtitle h3 {
   font-family: "Open Sans", serif;
   font-size: var(--subtitle-fontisize);
-  font-weight: 700;
+  font-weight: 800;
 }
 
 #Donation .list-message {
@@ -208,6 +225,7 @@ main {
 #Donation ul {
   width: 20rem;
   padding: 0 2rem;
+  margin: 2rem 0 2rem 0;
 }
 
 
@@ -229,11 +247,11 @@ main {
 
 #Donation .text-message-2 {
 
-  margin-top: 1rem;
+  margin: 2rem 0 2rem 0;
   padding: 1rem;
 
   text-align: center;
-  font-size: 1.1rem;
+  font-size: var(--text-fontsize);
   font-family: "Open Sans", serif;;
   font-weight: 600;
   letter-spacing: 0.1rem;
@@ -292,6 +310,7 @@ main {
 .donationButton:hover,
 .dropbtn:hover {
   opacity: .9;
+  box-shadow: 0px .2px 5px 1px rgba(0, 0, 0, 0.6);
 }
 
 /* ---------------------------------=--------------- */
@@ -304,6 +323,7 @@ main {
   height: 100vh;
   position: fixed;
   top: 0;
+  z-index: 999;
 }
 
 .overlayContent {
@@ -313,7 +333,7 @@ main {
   top: 0;
   left: 0;
   background-color: var(--background-color);
-  z-index: 999;
+  
 
   display: flex;
   flex-direction: column;
@@ -390,7 +410,15 @@ main {
 .overlayContent .box button {
   font-size: 1.3rem;
   font-weight: 500;
+  cursor: pointer;
 }
+
+.overlayContent .box button:hover {
+  opacity: .8;
+  background: var(--secondary-color);
+  color: white;
+} 
+
 
 .overlayContent .box button img {
   width: 2.4rem;
@@ -475,218 +503,135 @@ main {
 
 }
 
-@media (min-width: 365px) {
-  :root {
-    --font-size-logo: 1rem;
-    --font-size-title: 1.7rem;
-    --font-size-text: 0.9rem;
-    --font-size-aboutSubtitle: 1rem;
-    --font-size-donationSubtitle: 1.4rem;
-    --font-size-text2: 1.2rem;
+
+@media (min-width: 560px) {
+  #Content-main .maincontent-image img {
+    width: 23rem;
+  }
+  
+  #Content-main p, #About-main p {
+    max-width: 70%;
   }
 
-  #Header .box-1 .logo img {
-    width: 1.7rem;
+  #Donation ul {
+    width: 25rem;
   }
 
-  #Header .box-2 .image {
-    width: 10rem;
-    height: 21rem;
+  #Donation .text-message-2  {
+    width: 70%;
   }
 
-  #About .box .image {
-    width: 11rem;
-    height: 13rem;
+  #Donation ul li p{
+    font-size: 1.2rem; 
   }
 
-  .dropbtn {
-    width: 7rem;
-    height: 1.6rem;
-  }
-}
-
-@media (min-width: 425px) {
-  :root {
-    --font-size-logo: 1.1rem;
-    --font-size-title: 1.9rem;
-    --font-size-text: 0.9rem;
-    --font-size-aboutSubtitle: 1.1rem;
-    --font-size-donationSubtitle: 1.6rem;
-    --font-size-text2: 1.4rem;
+  .donationButtons {
+    gap: 1.5rem;
   }
 
-  #Header .box-1 .logo img {
-    width: 1.9rem;
-  }
-
-  #Header .box-2 .image {
-    width: 12rem;
-    height: 22rem;
-  }
-
-  #About .box .image {
-    width: 15rem;
-    height: 15rem;
-  }
-
-  .dropbtn {
+  .donationButton {
     width: 8rem;
-    height: 1.7rem;
-  }
+    height: 7rem;
+    font-size: 1.4rem;
+   }
 }
 
-@media (min-width: 525px) {
-  :root {
-    --font-size-logo: 1.2rem;
-    --font-size-title: 2.1rem;
-    --font-size-text: 1rem;
-    --font-size-aboutSubtitle: 1.2rem;
-    --font-size-donationSubtitle: 1.8rem;
-    --font-size-text2: 1.5rem;
-  }
-
-  #Header .box-1 .logo img {
-    width: 2rem;
-  }
-
-  #Header .box-2 .image {
-    width: 12rem;
-    height: 24rem;
-  }
-
-  #About .box .image {
-    width: 16rem;
-    height: 16rem;
-  }
-
-  .dropbtn {
-    font-size: 0.8rem;
-    width: 9rem;
-    height: 1.9rem;
-  }
-}
-
-@media (min-width: 600px) {
-  #Header .box-2 .image {
-    width: 17rem;
-    height: 25rem;
-  }
-
-  #About .box .image {
-    width: 19rem;
-    height: 19rem;
-  }
-
-  .dropbtn {
-    font-size: 1rem;
-    width: 11rem;
-    height: 2.2rem;
-  }
-}
-
-@media (min-width: 670px) {
-  :root {
-    --font-size-logo: 1.2rem;
-    --font-size-title: 2.1rem;
-    --font-size-text: 1.3rem;
-    --font-size-aboutSubtitle: 1.3rem;
-    --font-size-donationSubtitle: 1.9rem;
-    --font-size-text2: 1.6rem;
-  }
-
-  #Header .box-2 .image {
-    width: 19rem;
-    height: 26rem;
-  }
-
-  #About .box .image {
-    width: 24rem;
-    height: 24rem;
-  }
-
-  .dropbtn {
-    font-size: 1rem;
-    width: 13rem;
-    height: 2.4rem;
-  }
-}
-
-@media (min-width: 780px) {
-  :root {
-    --font-size-title: 2.1rem;
-    --font-size-text: 1.3rem;
-    --font-size-aboutSubtitle: 1.3rem;
-    --font-size-donationSubtitle: 1.9rem;
-    --font-size-text2: 1.6rem;
-  }
-
-  #Header .box-2 .image {
-    width: 22rem;
-    height: 28rem;
-  }
-
-  #About .box .image {
-    width: 26rem;
-    height: 26rem;
-  }
-
-  #Donation .value-text p {
-    font-size: 1.3rem;
-  }
-}
 
 @media (min-width: 870px) {
   :root {
-    --font-size-title: 2.1rem;
-    --font-size-text: 1.3rem;
-    --font-size-aboutSubtitle: 1.3rem;
-    --font-size-donationSubtitle: 1.9rem;
-    --font-size-text2: 1.6rem;
+  
+    --logo-fontsize: 1.5rem;
+    --title-fontsize: 3.5rem;
+    --subtitle-fontisize:2.8rem;
+    --text-fontsize: 1.4rem;
+  
   }
 
-  #Header .box-2 .image {
-    width: 24rem;
-    height: 28rem;
+  .logo img {
+    width: 2.5rem;
   }
 
-  #About .box .image {
-    width: 27rem;
-    height: 27rem;
+  #Content-main .maincontent-image img {
+    width: 25rem;
+  }
+
+  #Content-main h1 {
+    width: 20rem;
+  }
+
+  #Content-main p, #About-main p {
+    max-width: 70%;
+  }
+
+  .infoButtonsSelectors {
+    flex-direction: row;
+    margin: 8rem auto 3rem auto;
   }
 
   .infoButtonsSelectors .dropdown .dropbtn {
     width: 15rem;
   }
 
+  .dropdown-content {
+    max-height: 430px;
+    width: 340px;
+    margin-left: -3.2rem;
+  }
+
+  .dropdown-content p {
+    font-size: 1rem;
+  }
+
+  #Donation ul {
+    width: 40rem;
+  }
+
   #Donation .value-text p {
     font-size: 1.3rem;
+  }
+  #Donation .value-text img {
+    width: 3rem;
+  }
+
+  #Donation ul li p{
+    font-size: 1.4rem; 
+  }
+
+  .donationButtons {
+    gap: 2rem;
+  }
+
+  .donationButton {
+    width: 9rem;
+    height: 8rem;
+    font-size: 1.4rem;
+   }
+
+   #Footer .box-content ul li a {
+    font-size: 1.2rem;
   }
 }
 
 @media (min-width: 1024px) {
   :root {
-    --font-size-title: 2.1rem;
-    --font-size-text: 1.3rem;
-    --font-size-aboutSubtitle: 1.3rem;
-    --font-size-donationSubtitle: 1.9rem;
-    --font-size-text2: 1.6rem;
+  
+    --logo-fontsize: 1.5rem;
+    --title-fontsize: 3.5rem;
+    --subtitle-fontisize:3rem;
+    --text-fontsize: 1.5rem;
+  
   }
 
-  #Header .box-1 .title-message p {
-    padding: 0 5rem;
+  #Content-main .box {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 5rem;
+    margin: 3rem 0 5rem 0;
   }
 
-  #Header .box-2 .image {
-    width: 30rem;
-    height: 34rem;
-  }
-
-  #About .box .image {
-    width: 30rem;
-    height: 30rem;
-  }
-
-  .infoButtonsSelectors {
+  #Content-main .maincontent-image img {
+    width: 35rem;
   }
 
   .infoButtonsSelectors .dropdown .dropbtn {
@@ -695,7 +640,28 @@ main {
     font-size: 1.2rem;
   }
 
-  #Donation .value-text p {
-    font-size: 1.3rem;
+  
+  .dropdown-content {
+    max-height: 430px;
+    width: 400px;
+    margin-left: -2.7rem;
   }
+
+  .dropdown-content p {
+    font-size: 1.2rem;
+  }
+
+  #Donation .text-message-2  {
+    width: 60%;
+  }
+
+  #Donation ul {
+    width: 40rem;
+  }
+
+  #Donation .value-text p {
+    font-size: 1.5rem;
+  }
+
+ 
 }
