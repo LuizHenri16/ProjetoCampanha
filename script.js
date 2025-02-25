@@ -18,6 +18,12 @@ dropContentText.forEach((dropContentText, index) => {
     dropContentText.addEventListener("mouseleave", () => {
         dropdowns[index].classList.remove("ativo")
     })
+
+    addEventListener("scroll", function() {
+        if (window.scrollY > 800) {
+            dropdowns[index].classList.remove("ativo")
+        }
+    })
 })
 
 // Abrir o overlay com o código pix e qrcode
@@ -53,4 +59,5 @@ window.addEventListener('scroll', function() {
          header.style.boxShadow = "none";
     }
 })
+
 

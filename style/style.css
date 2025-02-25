@@ -170,10 +170,10 @@ main {
   position: absolute;
 
   background-color: white;
-  max-height: 430px;
+  max-height: 490px;
   width: 280px;
 
-  padding: 1rem;
+  padding: .5rem 2rem 0rem 2rem ;
   text-align: start;
   border-radius: 1rem;
   border: none;
@@ -183,9 +183,9 @@ main {
   z-index: 1;
 }
 
-.dropdown-content p {
+.dropdown-content ul{
   font-family:  "Open Sans", serif;
-  color: #464646;
+  color: #545353;
   font-weight: 500;
   font-size: 0.9rem;
 
@@ -193,9 +193,12 @@ main {
   display: block;
 }
 
-.dropdown-content p span {
+.dropdown-content ul li {
+  margin-bottom: 1rem;
+}
+
+.dropdown-content strong {
   color: black;
-  font-weight: 600;
 }
 
 .dropdown.ativo .dropdown-content {
@@ -242,7 +245,8 @@ main {
 }
 
 #Donation ul li p span {
-  color: black;
+  color: #303030;
+  font-weight: 700;
 }
 
 #Donation .text-message-2 {
@@ -518,7 +522,7 @@ main {
   }
 
   #Donation .text-message-2  {
-    width: 70%;
+    width: 90%;
   }
 
   #Donation ul li p{
@@ -624,10 +628,8 @@ main {
 
   #Content-main .box {
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: 5rem;
-    margin: 3rem 0 5rem 0;
+    gap: 3rem;
+    margin: 3rem 0 3rem 0;
   }
 
   #Content-main .maincontent-image img {
