@@ -51,11 +51,9 @@ function copiarCodigo(id) {
 window.addEventListener('scroll', function() {
     if(window.scrollY > 40) {
         header.style.backgroundColor = "#C4D0F7";
-        headerText.style.color = "white"
         header.style.boxShadow = " 1px 1px 3px .5px rgba(135,135,135,0.84)";
     } else if (window.screenY < 100) {
         header.style.backgroundColor = "#fafcff";
-         headerText.style.color = "#284cf3"
          header.style.boxShadow = "none";
     }
 })

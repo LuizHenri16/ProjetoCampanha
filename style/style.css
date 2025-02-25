@@ -1,3 +1,4 @@
+@font-face { font-family: 'MontaserFont'; src: url('assets/fonts/assets/fonts/Montserrat-Arabic Bold 700.otf') format('opentype'); }
 * {
   padding: 0;
   margin: 0;
@@ -109,9 +110,9 @@ main {
 }
 
 #Content-main h1 {
-  font-family: "Open Sans", serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: var(--title-fontsize);
-  font-weight: 800;
+  font-weight: 700;
   width: 15rem;
   letter-spacing: 2px;
 }
@@ -220,6 +221,7 @@ main {
 }
 
 #Donation .list-message {
+  font-family: "Open Sans", serif;;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -580,6 +582,10 @@ main {
     max-height: 430px;
     width: 340px;
     margin-left: -3.2rem;
+  }
+
+  #Donation .list-message {
+    margin-left: 6rem;
   }
 
   .dropdown-content p {
