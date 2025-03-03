@@ -123,33 +123,46 @@
         </div>
 
         <div class="text-message-2">
+          <div class="background"></div>
           <p>
             Através do Pix, você pode fazer sua parte e alegrar o dia de algumas
             crianças ; )
           </p>
         </div>
 
-        <div class="value-text">
-          <p>Escolha um valor:</p>
-          <img src="assets/icons/heart.svg" alt="" />
-        </div>
+        <button class="donationButton-open" onclick="showDonationButtons()"> Doar </button>
 
-        <div class="donationButtons">
-          <button class="donationButton" onclick="showOverlay('overlay1')">
-            R$ <br />
-            10,00
+        <div class="overlay-donationbuttons " >
+
+          <button class="closeButton" onclick="closeDonationButtons()" >
+            <img src="assets/icons/close-button.svg" alt="" />
           </button>
-          <button class="donationButton" onclick="showOverlay('overlay2')">
-            R$ <br />
-            20,00
-          </button>
-          <button class="donationButton" onclick="showOverlay('overlay3')">
-            R$ <br />
-            30,00
-          </button>
-          <button class="donationButton" onclick="showOverlay('overlay4')">
-            R$ <br />
-            40,00
+            
+          <div class="value-text">
+            <p>Escolha um valor:</p>
+            <img src="assets/icons/heart.svg" alt="" />
+          </div>
+  
+          <div class="donationButtons">
+            <button class="donationButton" onclick="showOverlay('overlay1')">
+              R$ <br />
+              10,00
+            </button>
+            <button class="donationButton" onclick="showOverlay('overlay2')">
+              R$ <br />
+              20,00
+            </button>
+            <button class="donationButton" onclick="showOverlay('overlay3')">
+              R$ <br />
+              30,00
+            </button>
+            <button class="donationButton" onclick="showOverlay('overlay4')">
+              R$ <br />
+              40,00
+            </button>
+          </div>
+          <button class="donationButtonCustom" onclick="showOverlay('overlay5')">
+            Doe qualquer valor
           </button>
         </div>
 
@@ -280,6 +293,40 @@
             </div>
           </div>
         </div>
+
+        <div id="overlay5" class="overlay">
+          <div class="overlayContent">
+            <button class="closeButton" onclick="closeOverlay('overlay5')">
+              <img src="assets/icons/close-button.svg" alt="" />
+            </button>
+            <div class="box">
+              <p class="value">Doe qualquer valor</p>
+              <div class="qrCodebox">
+                <img
+                  class="qrCode"
+                  src="/assets/images/qrcodeExemplo.png"
+                  alt="QR Code"
+                />
+              </div>
+              <p class="copytextmessage">
+                Aponte para a tela ou copie o código
+              </p>
+              <button class="copiarButton" onclick="copiarCodigo('pixCode1')">
+                Copiar código
+              </button>
+              <p class="prooftext">
+                <span>Envie seu comprovante clicando no botão abaixo.</span>Você
+                será redirecionado para o nosso WhatsApp!
+              </p>
+              <button proofButton onclick="goToContact()">
+                <img src="assets/icons/Whatsapp.svg" alt="" />enviar comprovante
+              </button>
+              <p id="pixCode1" class="hidden">valor customizado</p>
+            </div>
+          </div>
+        </div>
+
+
       </section>
     </main>
 
@@ -303,4 +350,5 @@
   </body>
 
   <script src="script.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
 </html>
