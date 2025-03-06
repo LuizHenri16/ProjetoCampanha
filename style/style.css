@@ -4,6 +4,7 @@
   text-decoration: none;
   box-sizing: border-box;
   scroll-behavior: smooth;
+
 }
 
 :root {
@@ -64,6 +65,8 @@ main {
   flex-direction: column;
   align-items: center;
   margin-top: 5rem;
+  
+  font-family: "Open Sans", serif;
 }
 
 #About {
@@ -236,12 +239,13 @@ main {
 
   margin-top: 2rem;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-
+  align-items: center;
   text-align: center;
-  width: 100%;
-  height: 100%;
+  background: #C4D0F7;
+
+  width: 90%;
+  border-radius: 1.4rem;
 }
 
 #Donation .text-message-2 p {
@@ -250,13 +254,8 @@ main {
   font-weight: 600;
   letter-spacing: 0.1rem;
 
-  width: 100%;
-  height: 100%;
   padding: 1rem;
-  background: #C4D0F7;
-  position: relative;
-  left: -1rem;
-  border-radius: 0 1.2rem 1.2rem 0;
+
 }
 
 #Donation .value-text {
@@ -511,8 +510,8 @@ main {
 .line {
   width: 100%;
   height: 1px;
-  background: white;
-  margin: .5rem 0;
+  background: rgba(255, 255, 255, 0.581);
+  margin: 2rem 0 .5rem;
 }
 
 #Footer .box {
@@ -642,6 +641,11 @@ main {
 
   #Donation ul li p{
     font-size: 1.4rem; 
+  }
+  .donationButton-open {
+    width: 16rem;
+    height: 4rem;
+    font-size: 1.8rem;
   }
 
   .donationButtons {
