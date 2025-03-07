@@ -321,6 +321,19 @@ main {
   cursor: pointer;
 }
 
+.dropdown-content ul li a {
+  cursor: pointer;
+  color: #284cf3;
+  font-weight: 800;
+  animation: pulsate-fwd-var2 2s ease-in-out infinite both;
+}
+
+.dropdown-content ul li a:hover {
+  color: #c4d0f7;
+}
+
+
+
 .donationButton-open {
   width: 14rem;
   height: 3.5rem;
@@ -348,6 +361,19 @@ main {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes pulsate-fwd-var2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -668,7 +694,10 @@ main {
 
   #Footer .box-content ul li a {
     font-size: 1.2rem;
+    cursor: pointer;
   }
+
+
 }
 
 @media (min-width: 1024px) {
