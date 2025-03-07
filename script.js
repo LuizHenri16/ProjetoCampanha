@@ -60,6 +60,10 @@ function copiarCodigo(id) {
   });
 }
 
+function goToContact() {
+  window.open('https://wa.me/3891388472', '_blank');
+}
+
 window.addEventListener("scroll", function () {
   if (window.scrollY > 40) {
     header.style.backgroundColor = "#C4D0F7";

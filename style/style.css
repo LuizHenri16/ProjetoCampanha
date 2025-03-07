@@ -4,7 +4,6 @@
   text-decoration: none;
   box-sizing: border-box;
   scroll-behavior: smooth;
-
 }
 
 :root {
@@ -14,21 +13,20 @@
 
   --logo-fontsize: 1.3rem;
   --title-fontsize: 3rem;
-  --subtitle-fontisize:2.3rem;
+  --subtitle-fontisize: 2.3rem;
   --text-fontsize: 1.2rem;
-
 }
 
 body {
   background-color: var(--background-color);
 }
 
-#Header  {
+#Header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: .5rem;
+  padding: 0.5rem;
   background-color: none;
   z-index: 100;
 
@@ -43,7 +41,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .logo img {
@@ -53,7 +51,7 @@ body {
 #Header .logo p {
   font-size: var(--logo-fontsize);
   font-family: "Chau Philomene One", serif;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 #Header .logo p span {
@@ -65,7 +63,7 @@ main {
   flex-direction: column;
   align-items: center;
   margin-top: 5rem;
-  
+
   font-family: "Open Sans", serif;
 }
 
@@ -84,7 +82,8 @@ main {
   width: 19rem;
 }
 
-#Content-main, #About-main {
+#Content-main,
+#About-main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -101,7 +100,8 @@ main {
   letter-spacing: 2px;
 }
 
-#Content-main p, #About-main p {
+#Content-main p,
+#About-main p {
   color: #787672;
   font-size: var(--text-fontsize);
   font-weight: 500;
@@ -110,9 +110,10 @@ main {
   margin-top: 1.5rem;
 }
 
-#Content-main p span, #About-main p span {
+#Content-main p span,
+#About-main p span {
   color: #303030;
-  font-weight: 800  ;
+  font-weight: 800;
 }
 
 #About-main h1 {
@@ -120,6 +121,7 @@ main {
   font-size: var(--subtitle-fontisize);
   font-weight: 800;
   margin-top: 2rem;
+  width: 15rem;
 }
 
 .infoButtonsSelectors {
@@ -158,7 +160,7 @@ main {
   max-height: 490px;
   width: 280px;
 
-  padding: .5rem 2rem 0rem 2rem ;
+  padding: 0.5rem 2rem 0rem 2rem;
   text-align: start;
   border-radius: 1rem;
   border: none;
@@ -168,8 +170,8 @@ main {
   z-index: 1;
 }
 
-.dropdown-content ul{
-  font-family:  "Open Sans", serif;
+.dropdown-content ul {
+  font-family: "Open Sans", serif;
   color: #545353;
   font-weight: 500;
   font-size: 0.9rem;
@@ -205,7 +207,7 @@ main {
 }
 
 #Donation .list-message {
-  font-family: "Open Sans", serif;;
+  font-family: "Open Sans", serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -217,13 +219,12 @@ main {
   margin: 2rem 0 2rem 0;
 }
 
-
 #Donation ul li {
   list-style: outside;
   margin-top: 1rem;
 }
 
-#Donation ul li p{
+#Donation ul li p {
   font-size: 1rem;
   font-family: "Open Sans", serif;
   font-weight: 500;
@@ -236,13 +237,12 @@ main {
 }
 
 #Donation .text-message-2 {
-
   margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: #C4D0F7;
+  background: #c4d0f7;
 
   width: 90%;
   border-radius: 1.4rem;
@@ -250,12 +250,11 @@ main {
 
 #Donation .text-message-2 p {
   font-size: var(--text-fontsize);
-  font-family: "Open Sans", serif;;
+  font-family: "Open Sans", serif;
   font-weight: 600;
   letter-spacing: 0.1rem;
 
   padding: 1rem;
-
 }
 
 #Donation .value-text {
@@ -267,7 +266,7 @@ main {
 }
 
 #Donation .value-text p {
-  font-family: "Open Sans", serif;;
+  font-family: "Open Sans", serif;
   letter-spacing: 0.1rem;
   color: #575655;
   font-weight: 700;
@@ -302,14 +301,13 @@ main {
   border: 1px solid var(--primary-color);
 
   font-size: 1.2rem;
-  font-family:"Open Sans", serif;
+  font-family: "Open Sans", serif;
   font-weight: 700;
   letter-spacing: 2px;
   cursor: pointer;
 }
 
 .donationButtonCustom {
-  
   width: 15rem;
   height: 6rem;
   border-radius: 1.4rem;
@@ -317,7 +315,7 @@ main {
   background-color: var(--primary-color);
   border: 1px solid var(--primary-color);
   font-size: 1.2rem;
-  font-family:"Open Sans", serif;
+  font-family: "Open Sans", serif;
   font-weight: 700;
   letter-spacing: 2px;
   cursor: pointer;
@@ -325,7 +323,7 @@ main {
 
 .donationButton-open {
   width: 14rem;
-  height: 3rem;
+  height: 3.5rem;
   font-size: 1.5rem;
   font-weight: bold;
 
@@ -336,6 +334,21 @@ main {
   border-radius: 1.5rem;
   border: none;
   cursor: pointer;
+  animation: pulsate-fwd 2s ease-in-out infinite both;
+}
+
+@keyframes pulsate-fwd {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.9;
+    box-shadow: 0px 0.2px 5px 1px rgba(0, 0, 0, 0.6);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .overlay-donationbuttons {
@@ -352,16 +365,16 @@ main {
 }
 
 .donationButton:hover,
-.dropbtn:hover, .donationButton-open:hover, .donationButtonCustom:hover {
-  opacity: .9;
-  box-shadow: 0px .2px 5px 1px rgba(0, 0, 0, 0.6);
+.dropbtn:hover,
+.donationButton-open:hover,
+.donationButtonCustom:hover {
+  opacity: 0.9;
+  box-shadow: 0px 0.2px 5px 1px rgba(0, 0, 0, 0.6);
 }
 
 /* ---------------------------------=--------------- */
 
 /* ---  Overlay Pix --- */
-
-
 
 .overlay {
   display: none;
@@ -379,7 +392,6 @@ main {
   top: 0;
   left: 0;
   background-color: var(--background-color);
-  
 
   display: flex;
   flex-direction: column;
@@ -391,7 +403,7 @@ main {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  font-family:"Open Sans", serif;
+  font-family: "Open Sans", serif;
 }
 
 .overlayContent .box p {
@@ -465,11 +477,10 @@ main {
 }
 
 .overlayContent .box button:hover {
-  opacity: .8;
+  opacity: 0.8;
   background: var(--secondary-color);
   color: white;
-} 
-
+}
 
 .overlayContent .box button img {
   width: 2.4rem;
@@ -511,7 +522,7 @@ main {
   width: 100%;
   height: 1px;
   background: rgba(255, 255, 255, 0.581);
-  margin: 2rem 0 .5rem;
+  margin: 2rem 0 0.5rem;
 }
 
 #Footer .box {
@@ -529,12 +540,12 @@ main {
 #Footer .box-content ul {
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 0.5rem;
   list-style: none;
 }
 
 #Footer .box-content ul li a {
-  font-family: "Open Sans", serif; ;
+  font-family: "Open Sans", serif;
   color: rgb(255, 255, 255);
 }
 
@@ -551,16 +562,15 @@ main {
 
   font-size: 0.7rem;
   color: white;
-
 }
-
 
 @media (min-width: 560px) {
   #Content-main .maincontent-image img {
     width: 23rem;
   }
-  
-  #Content-main p, #About-main p {
+
+  #Content-main p,
+  #About-main p {
     max-width: 70%;
   }
 
@@ -568,8 +578,8 @@ main {
     width: 25rem;
   }
 
-  #Donation ul li p{
-    font-size: 1.2rem; 
+  #Donation ul li p {
+    font-size: 1.2rem;
   }
 
   .donationButtons {
@@ -580,18 +590,15 @@ main {
     width: 8rem;
     height: 7rem;
     font-size: 1.4rem;
-   }
+  }
 }
-
 
 @media (min-width: 870px) {
   :root {
-  
     --logo-fontsize: 1.5rem;
     --title-fontsize: 3.5rem;
-    --subtitle-fontisize:2.8rem;
+    --subtitle-fontisize: 2.8rem;
     --text-fontsize: 1.4rem;
-  
   }
 
   .logo img {
@@ -606,7 +613,8 @@ main {
     width: 20rem;
   }
 
-  #Content-main p, #About-main p {
+  #Content-main p,
+  #About-main p {
     max-width: 70%;
   }
 
@@ -639,8 +647,8 @@ main {
     width: 3rem;
   }
 
-  #Donation ul li p{
-    font-size: 1.4rem; 
+  #Donation ul li p {
+    font-size: 1.4rem;
   }
   .donationButton-open {
     width: 16rem;
@@ -656,21 +664,19 @@ main {
     width: 9rem;
     height: 8rem;
     font-size: 1.4rem;
-   }
+  }
 
-   #Footer .box-content ul li a {
+  #Footer .box-content ul li a {
     font-size: 1.2rem;
   }
 }
 
 @media (min-width: 1024px) {
   :root {
-  
     --logo-fontsize: 1.5rem;
     --title-fontsize: 3.5rem;
-    --subtitle-fontisize:3rem;
+    --subtitle-fontisize: 3rem;
     --text-fontsize: 1.5rem;
-  
   }
 
   #Content-main .box {
@@ -689,7 +695,6 @@ main {
     font-size: 1.2rem;
   }
 
-  
   .dropdown-content {
     max-height: 430px;
     width: 400px;
@@ -699,7 +704,6 @@ main {
   .dropdown-content p {
     font-size: 1.2rem;
   }
-
 
   #Donation ul {
     width: 40rem;
@@ -714,11 +718,11 @@ main {
   }
 }
 
-@keyframes ScrollReveal2  {
+@keyframes ScrollReveal2 {
   from {
     opacity: 0;
     transform: translateX(-500px);
-  } 
+  }
 
   to {
     opacity: 1;
@@ -726,6 +730,3 @@ main {
     color: white;
   }
 }
-
-
-
