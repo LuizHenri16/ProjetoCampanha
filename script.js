@@ -23,7 +23,7 @@ dropContentText.forEach((dropContentText, index) => {
   });
 
   addEventListener("scroll", function () {
-    if (window.scrollY > 800) {
+    if (window.scrollY > 1200) {
       dropdowns[index].classList.remove("ativo");
     }
   });
