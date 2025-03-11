@@ -216,14 +216,14 @@ main {
 
 #Donation ul {
   width: 20rem;
-  padding: 0 2rem;
+  padding: 0 1rem;
   margin: 2rem 0 2rem 0;
 }
 
 #Donation ul li {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   margin-top: 1rem;
 }
 
