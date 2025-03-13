@@ -340,6 +340,10 @@ main {
   color: #c4d0f7;
 }
 
+.dropdown-content.help ul {
+  list-style: none;
+}
+
 
 
 .donationButton-open {
